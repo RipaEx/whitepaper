@@ -1,5 +1,5 @@
 <p align="center">
-    ![RipaEx Whitepaper Front Cover](./RipaExWPFrontCover.png)
+    <a href="./RipaExWPFrontCover.png" />
 </p>
 
 # whitepaper

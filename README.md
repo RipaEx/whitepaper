@@ -1,3 +1,5 @@
+#h1 THIS REPOSITORY IS JUST A TEMPLATE: THE CONTENT OF THE WHITEPAPER DOES NOT RAPRESENT THE ACTUAL WORKFLOW OF THE PROJECT
+
 <p align="center">
     <a href="./RipaEx_WP_EN.pdf" >
         <img border="0" alt="REWPFC" src="./RipaExWPFrontCover.png" >
@@ -6,3 +8,5 @@
 
 # whitepaper
 RipaEx whitepaper repository
+
+#h1 THIS REPOSITORY IS JUST A TEMPLATE: THE CONTENT OF THE WHITEPAPER DOES NOT RAPRESENT THE ACTUAL WORKFLOW OF THE PROJECT

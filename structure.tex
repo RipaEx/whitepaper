@@ -103,7 +103,7 @@
 {\color{trolleygrey!60}\normalsize\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
 
 % Section text styling
-\titlecontents{section}[1.25cm] % Indentation
+\titlecontents{section}[1.75cm] % Indentation
 {\addvspace{3pt}\sffamily\bfseries} % Spacing and font options for sections
 {\contentslabel[\thecontentslabel]{1.25cm}} % Section number
 {}
@@ -111,7 +111,7 @@
 []
 
 % Subsection text styling
-\titlecontents{subsection}[1.25cm] % Indentation
+\titlecontents{subsection}[2.25cm] % Indentation
 {\addvspace{1pt}\sffamily\small} % Spacing and font options for subsections
 {\contentslabel[\thecontentslabel]{1.25cm}} % Subsection number
 {}
@@ -458,8 +458,13 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-4cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
-\draw[anchor=west] (\Gm@lmargin+.3cm,-4cm) node {\huge\sffamily\bfseries\color{trolleygrey}\thechapter\autodot~#1\strut};
+\ifusechapterimage
+    \draw[anchor=west] (\Gm@lmargin,-6.5cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
+    \draw[anchor=west] (\Gm@lmargin+.3cm,-6.5cm) node {\huge\sffamily\bfseries\color{trolleygrey}\thechapter\autodot~#1\strut};
+\else
+    \draw[anchor=west] (\Gm@lmargin,-3.5cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
+    \draw[anchor=west] (\Gm@lmargin+.3cm,-3.5cm) node {\huge\sffamily\bfseries\color{trolleygrey}\thechapter\autodot~#1\strut};
+\fi
 \end{tikzpicture}};
 \end{tikzpicture}
 \else
@@ -467,15 +472,20 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-4cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
-\draw[anchor=west] (\Gm@lmargin+.3cm,-4cm) node {\huge\sffamily\bfseries\color{trolleygrey}#1\strut};
+\ifusechapterimage
+    \draw[anchor=west] (\Gm@lmargin,-6.5cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
+    \draw[anchor=west] (\Gm@lmargin+.3cm,-6.5cm) node {\huge\sffamily\bfseries\color{trolleygrey}#1\strut};
+\else
+    \draw[anchor=west] (\Gm@lmargin,-3.5cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
+    \draw[anchor=west] (\Gm@lmargin+.3cm,-3.5cm) node {\huge\sffamily\bfseries\color{trolleygrey}#1\strut};
+\fi
 \end{tikzpicture}};
 \end{tikzpicture}
 \fi\fi
 \ifusechapterimage
-    \par\vspace*{250\p@}
+    \par\vspace*{180\p@}
 \else
-    \par\vspace*{130\p@}
+    \par\vspace*{120\p@}
 \fi
 }}
 
@@ -486,14 +496,19 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-4cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
-\draw[anchor=west] (\Gm@lmargin+.3cm,-4cm) node {\huge\sffamily\bfseries\color{trolleygrey}#1\strut};
+\ifusechapterimage
+    \draw[anchor=west] (\Gm@lmargin,-6.5cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
+    \draw[anchor=west] (\Gm@lmargin+.3cm,-6.5cm) node {\huge\sffamily\bfseries\color{trolleygrey}#1\strut};
+\else
+    \draw[anchor=west] (\Gm@lmargin,-3.5cm) node [line width=2pt,rounded corners=15pt,draw=azure(colorwheel),fill=white,fill opacity=0.9,inner sep=15pt]{\strut\makebox[22cm]{}};
+    \draw[anchor=west] (\Gm@lmargin+.3cm,-3.5cm) node {\huge\sffamily\bfseries\color{trolleygrey}#1\strut};
+\fi
 \end{tikzpicture}};
 \end{tikzpicture}
 \ifusechapterimage
-    \par\vspace*{250\p@}
+    \par\vspace*{180\p@}
 \else
-    \par\vspace*{130\p@}
+    \par\vspace*{120\p@}
 \fi
 }
 \makeatother

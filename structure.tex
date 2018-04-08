@@ -55,6 +55,9 @@
 \definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
 \definecolor{silver}{rgb}{0.75, 0.75, 0.75}
 \definecolor{trolleygrey}{rgb}{0.5, 0.5, 0.5}
+\definecolor{battleshipgrey}{rgb}{0.52, 0.52, 0.51}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\definecolor{davy\'sgrey}{rgb}{0.33, 0.33, 0.33}
 \definecolor{azure(colorwheel)}{rgb}{0.0, 0.5, 1.0}
 %----------------------------------------------------------------------------------------
 %	FONTS
@@ -102,20 +105,20 @@
 {\color{trolleygrey}}  
 {\color{trolleygrey!60}\normalsize\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
 
-% Section text styling
+% Section text styling 
 \titlecontents{section}[1.75cm] % Indentation
 {\addvspace{3pt}\sffamily\bfseries} % Spacing and font options for sections
-{\contentslabel[\thecontentslabel]{1.25cm}} % Section number
-{}
-{\hfill\color{black}\thecontentspage} % Page number
+{\color{battleshipgrey!60}\contentslabel[\thecontentslabel]{1.25cm}\color{battleshipgrey}} % Section number
+{\color{battleshipgrey}}  
+{\color{battleshipgrey!60}\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
 []
 
-% Subsection text styling
+% Subsection text styling 
 \titlecontents{subsection}[2.25cm] % Indentation
 {\addvspace{1pt}\sffamily\small} % Spacing and font options for subsections
-{\contentslabel[\thecontentslabel]{1.25cm}} % Subsection number
-{}
-{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+{\color{cadetgrey!60}\contentslabel[\thecontentslabel]{1.25cm}\color{cadetgrey}} % Subsection number
+{\color{cadetgrey}}  
+{\hfill\color{cadetgrey!60}\thecontentspage} % Page number
 []
 
 % List of figures
@@ -359,15 +362,15 @@ innerbottommargin=5pt]{cBox}
 \renewcommand{\section}{\@startsection{section}{1}{\z@}
 {-4ex \@plus -1ex \@minus -.4ex}
 {1ex \@plus.2ex }
-{\normalfont\large\sffamily\bfseries}}
+{\normalfont\LARGE\sffamily\bfseries\textcolor{trolleygrey}}}
 \renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
 {-3ex \@plus -0.1ex \@minus -.4ex}
 {0.5ex \@plus.2ex }
-{\normalfont\sffamily\bfseries}}
+{\normalfont\Large\sffamily\bfseries\textcolor{battleshipgrey}}}
 \renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
 {-2ex \@plus -0.1ex \@minus -.2ex}
 {.2ex \@plus.2ex }
-{\normalfont\small\sffamily\bfseries}}                        
+{\normalfont\sffamily\bfseries}}                        
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
 {-2ex \@plus-.2ex \@minus .2ex}
 {.1ex}

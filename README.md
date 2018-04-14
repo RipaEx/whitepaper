@@ -8,5 +8,7 @@
 
 # whitepaper
 RipaEx whitepaper repository
+eng -> english whitepaper
+ita -> italian whitepaper
 
 # THIS REPOSITORY IS A WORK IN PROGRESS: CONTENT OF THE WHITEPAPER MAY NOT RAPRESENT THE FINAL WORKFLOW OF THE PROJECT

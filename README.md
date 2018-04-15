@@ -13,10 +13,8 @@ RipaEx whitepaper repository
 * ita -> italian whitepaper
 
 # ToDo:
-* boxed roadmap
 * boxed key terminology??
 * quote from website in Introduction or Abstract ??
-* 5W: Who, What, When, Where, Why. How, How Much, With What  in Summary
 * FontAwesome icons in ripa exchange features
 
 # THIS REPOSITORY IS A WORK IN PROGRESS

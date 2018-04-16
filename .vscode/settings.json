@@ -1,9 +1,9 @@
 {
-    "spellright.language": "en",
+    "spellright.language": "it",
     "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
+      "markdown",
+      "latex",
+      "plaintext"
     ],
     "latex-workshop.latex.clean.fileTypes": [
         "*.aux",

@@ -609,7 +609,7 @@ Following some screenshot of the administrative console of Ripa Exchange-Peatio 
 Ripa Exchange is a centralized exchange which will be converted into an hybrid-decentralized exchange to create a network of exchanges
 that share the same liquidity between each of them so you can offer liquidity from day 1 of your exchanges operations.\\
 
-To offer the PROs of a centralizide exchange with all the PROs of a decentralized exchange without the CONs of both of them, 
+To offer the PROs of a centralized exchange with all the PROs of a decentralized exchange without the CONs of both of them, 
 we need to convert first into an hybrid-decentralized exchange and during phase 3 of our project (WP4-6) we will make all the 
 functional and technical analysis required to make the next step on solid ground.
 
@@ -624,94 +624,346 @@ functional and technical analysis required to make the next step on solid ground
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_4_Dubai.jpg} % Chapter heading image
+\chapter{The Ripa Blockchain}
+The project RipaEx will have its own blockchain called Ripa which will be run on the DPOS protocol and has the \PHP 
+token (XPX symbol) running on it that will serve the five following purposes:
+	\begin{enumerate}
+		\item to list new cryptocurrencies on Ripa Exchanges
+		\item to advertise new projects
+		\item to buy RipaEx gadget on Ripa Exchange Store
+		\item to pay for the sell of goods \& services on authorized resellers with our RipaEx POS (Point of Sale)
+		\item to share liquidity between Ripa Exchanges in the same network
+	\end{enumerate}
 
-\chapter{La Blockchain Ripa}
+Ripa \PHP or XPX is a cryptocurrency derivate from ARK, Lisk, Crypti and BitShares with unique differences and improvements
+for reaching the goal of shared liquidity between exchanges in the same Ripa network. This code however inherits the 
+simplified interactions between ARK and other blockchain systems using DPoS as their consensus. This homogeneous codebase
+allows for the potential to provide service bridges in the form of ARK-Lisk blockchain apps, along with any other additional 
+systems provided by their blockchain administrators.
 
-\section{Table}\index{Table}
+\vspace{5mm}
+\textsc{\textbf{Ripa blockchain is an ARK fork and the use of a blockchain technology for the network of exchanges created will complete
+the ripa ecosystem by permitting each exchange in the ripa network to share the same liquidity. We will always entrust ARK as our 
+blockchain technology provider to merge their code into our latest features for what concerning the RIPA Blockchain}}
 
-\begin{table}[h]
-	\centering
-	\begin{tabular}{l l l}
-		\toprule
-		\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
-		\midrule
-		Treatment 1         & 0.0003262           & 0.562               \\
-		Treatment 2         & 0.0015681           & 0.910               \\
-		Treatment 3         & 0.0009271           & 0.296               \\
-		\bottomrule
-	\end{tabular}
-	\caption{Table caption}
-\end{table}
+\vspace{5mm}
 
-%------------------------------------------------
+Explained the use of the Ripa Blockchain in the RipaEx ecosystem and explained the RIPA - ARK technological relations what is 
+following are the specifications of the Ripa Blockchain derived/inherited from ARK.
 
-\section{Figure}\index{Figure}
+\section{Delegated Proof of Stake Technology}
+Ripa Blockchain, will inherits the Delegated Proof of Stake (DPoS) consensus system that was first introduced
+by BitShares. This consensus algorithm was designed to eliminate the issues associated with Proof of Work (PoW), 
+namely the centralization of computing power and the exponentially increasing waste of real world energy. While not
+completely decentralized as it relies on consensus by a fixed number of elected delegates, it guarantees a better decentralization 
+than Bitcoin. The consensus algorithm implementation is improved over time, evolving into an optimal consensus system.\\
 
-\begin{figure}[h]
-	\centering\includegraphics[scale=0.5]{placeholder}
-	\caption{Figure caption}
-\end{figure}
+The technical description of the Ripa blockchain is as follow:
+\begin{enumerate}
+	\item DPoS (Delegated Proof of Stake)
+	\begin{description}
+		\item - 101 active forging Delegates
+		\item - Delegates selected by vote mechanism built into DPoS
+		\item - 115,000,000 RIPA - Seeded Genesis Block
+	\end{description}
+	\item Multi-signature accounts
+	\item Constant block reward
+	\begin{description}
+		\item - 2 \PHP per block
+		\item - Inflation Rate (with 8s block times)
+		\begin{description}
+			\item 6.31\% for the first year
+			\item 5.93\% the 2nd year
+			\item 4.02\% the 10th year
+		\end{description}
+		\item - 8-second block time
+		\begin{description}
+			\item - Decreased block time possible with future upgrades to the core.
+		\end{description}
+		\item - 25 transactions per block
+		\begin{description}
+			\item - Increased via soft fork as needed.
+		\end{description}
+	\end{description}
+	\item Routing tables
+	\item SmartBridge data field for custom use and bridging blockchains (ARK Contract Execution Service)
+	\item Batch transactions\footnote{Future upgrade: when ARK 2.0 will be released \label{note1}}
+	\item Custom transaction fees\footnotemark[\value{footnote}]
+	\item Native smart contract execution\footnote{Future upgrade: when ARK Virtual Machine will be released}
+\end{enumerate}
 
+\vspace{5mm}
+\textsc{\textbf{As said Ripa blockchain is an ARK fork and we will entrust ARK as our blockchain technology provider to merge their 
+code into our latest features for what concerning the RIPA Blockchain}}, features like:
+\begin{description}
+	\item[Scaling network] up to the level of major Credit Card networks with core upgrades
+	\begin{description}
+		\item - Increasing the number of Forging Delegates
+		\item - Increasing the Block Size to include more transactions
+		\item - Implementation of pre-approval PBFT block concept testnet [codename:
+		TwinChain]
+		\item - Routing tables, to minimize hops among nodes when blocks are broadcast
+		\item - Include forging with RIPA Uncles.	
+	\end{description}
+	\item[Two node types] is used to secure the RIPA network:
+	\begin{description}
+		\item[Relay nodes] - Nodes with full API functionality, acting as a backend for the
+		feature rich lite clients. Relay nodes do not collect any transaction fee and do
+		not have the ability to Forge RIPA Blocks.
+		\item[Forging nodes] - Nodes with reduced API functionality, decreasing the
+		exposure to potential DDoS attacks on the RIPA Platform. Forging nodes are
+		able to Forge RIPA and receive transaction fees.
+	\end{description}
+	\item[Official lite client] for network access is be provided shortly before the mainnet
+	launch including desktop clients (Windows, MacOS, and Linux) and mobile clients
+	(Android and iOS).
+	\item[OffLine wallet creation]: the network itself does not use a Graphical User Interface by default. Any RIPA
+	account can be created offline and managed at no cost with a single device
+	(computer, mobile phone, embedded ARM, IoT).
+\end{description}
+
+\section{Hierarchical Deterministic (HD) Wallets (BIP32)}
+The structure of the public and private key generation follows the same specification
+as Bitcoin. A custom implementation of BIP32 for Hierarchical Deterministic Wallets
+is provided to RIPA users.
+
+\section{Fees}
+The fee for standard transactions is set at \PHP0.1 but the will be flexible in future releases of Ripa Blockchain.
+At mainnet launch, a fee structure is provided out of the box to forging delegates with the following rules:
+	\begin{description}
+		\item - Transaction \PHP0.1
+		\item - Vote \PHP1 (101 votes per transaction)
+		\item - Second Signature \PHP1
+		\item - Multi Signature \PHP1 per signature + \PHP1 per signing account
+		\item - Registering a delegate \PHP25.
+	\end{description}
+All fees are paid to the forging node which processes the block containing those fees.
+
+\section{Ripa Delegates and Delegate Voting}
+Any node running the core blockchain code wishing to become a forging node must
+register their account within the RIPA network. The fee for this registration is set to
+25 \PHP per delegate account registered.
+RIPA incorporates a new DPoS voting system originally envisioned by the Crypti
+Founders. The RIPA system fee is 1 \PHP per delegate vote. The voting weight of each
+wallet will be split evenly between all delegates voted. For example:
+\begin{description}
+	\item - If a wallet votes for one delegate, that delegate receives 100\% of the wallets
+voting weight.
+	\item - If that wallet votes for an additional delegate, the entire vote weight is split
+evenly between the two delegates at 50\%.
+	\item - By adding a third delegate, the voting weight splits again, and each of the
+three delegates receives 33.333\% of the voting weight from that wallet.
+\end{description}
+
+The 101 forging nodes with the highest number of votes are eligible to Forge RIPA
+blocks. This design eliminates the possibility that any single large RIPA holder or an
+organization holding large percentages of RIPA are able to gain control over the
+entire network by voting for all of their nodes into forging positions, thus effectively
+taking complete control over that DPoS Blockchain. Votes from RIPA Tokens held by
+RIPA Crew may be used at RIPA Crew's discretion.
+
+\section{Connecting Blockchains}
+\subsection{ARK Bridged Blockchains (SmartBridge Technology)}
+The ARK Platform does not provide direct support for sidechains or dapp databases.
+Instead, a mechanism to bridge together blockchains is provided via a bridging
+function built into ARK Core where any blockchain can send and receive trigger
+function notices and informational data through the primary ARK network via
+custom developed \textbf{SmartBridge(s)} and \textbf{Encoded Listeners}.
+\begin{center}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ARKSmartBridge}
+	\captionof{figure}{ARK SmartBridge Technology}
+\end{center}
+
+\subsection{A.C.E.S. - ARK Contract Execution Service}
+ACES is a blockchain interoperability platform that provides simple protocols and tools for building a robust blockchain 
+service marketplace.
+
+ACES is composed mainly of the following three components:
+\begin{description}
+	\item[Listeners] ACES Listeners provide a way for all the different blockchain transaction events to be easily 
+	consumed via a common REST-ful API. The API allows consumers to create subscriptions and receive blockchain events 
+	in real-time using Webhook callbacks.
+	\item[Services] ACES Services create and excute Service Contracts, which can be anything from uploading 
+	a file to a storage blockchain, performing value transfers, creating smart contracts, executing code on 
+	blockchain based computing platforms, or interacting with IoT hardware.
+	\item[Marketplace Console] The ACES Marketplace Console is a consumer dashboard for searching and executing 
+	service contracts listed on the Marketplace. ACES Service providers can list their service nodes using the Marketplace API.
+\end{description}
+
+\begin{center}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ACES}
+	\captionof{figure}{ARK-BTC A.C.E.S. SmartBridge Implementation Overview}
+\end{center}
+
+\section{Ripa Liquidity Service Provider (R.L.S.P)}
+Using the SmartBridge technology RipaEx will build a mechanism to share liquidity between all the exchanges in the Ripa network
+by writing the single exchange orderbook in the Ripa Blockchain and by executing order matching between all exchanges in the network.
+
+In this way you can have the benefits of a decentralized orderbook (like liquidity) with the benefits of a centralized exchange (like
+platinum customer support and FIAT exchange).
+
+\section{Ripa Community Fund}
+To permits the born of new exchanges in the Ripa network a Ripa Community Fund - RCF - is created with the following characteristics:
+\begin{description}
+	\item[Starting Principal]: the RCF will have a starting operating capital of 5\% (5,750,000 \PHP) of the genesis block
+	\item[Recurring Participation]: each delegate will contribute to the RCF with 5\% of its forged XPXs
+\end{description}
+
+To obtain funds from the RCF to start your own Ripa Exchange you will submit your proposal in the official RCF section in the Ripa forum at
+anytime after the first Ripa Exchange instance will be operative.
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 5: Token Sale
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_5_Tokyo.jpg} % Chapter heading image
+\chapter{Token Sale}
+The RipaEx XPX token sale will be separated into two phases:
+	\begin{description}
+		\item[\textsc{PreSale}]: that will run from April to August 2018
+		\item[\textsc{RIPA TEC}]: that will run from September to December 2018
+	\end{description}
 
-\chapter{Lo Scambio di Token XPX}
+\section{How to Invest}
+\subsection{XPX Ripa Token PreSale}
+\subsection{RIPA TEC}
 
-\section{Table}\index{Table}
+\section{XPX Ripa Token Distribution}
+\textbf{115,000,000} XPX tokens are seeded into the genesis block: distribution of the XPX tokens generated are described into
+figure \ref{fig:distribution} and table \ref{tab:distribution}.
 
-\begin{table}[h]
+\vspace{5mm}
+%\begin{center}
+	\begin{tikzpicture}
+		\pie [rotate = 180, explode={0.1, 0.1, 0.1, 0.1, 0.1, 0.1}, radius = 3]
+		{65/PreSale \& RIPA TEC,
+		15/RIPA Founders Team, 
+		6/for marketing,
+		5/for bounties,
+		5/for RCF,
+		4/ARK Team}
+	\end{tikzpicture}
+	\captionof{figure}{Ripa token distribution - Division of funds}	
+	\label{fig:distribution}
+%\end{center}
+
+\vspace{5mm}
+\begin{table}[H]
 	\centering
 	\begin{tabular}{l l l}
 		\toprule
-		\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
+		\textbf{Percentage (\%)} & \textbf{Quantity (\PHP)} & \textbf{Purpose} \\
 		\midrule
-		Treatment 1         & 0.0003262           & 0.562               \\
-		Treatment 2         & 0.0015681           & 0.910               \\
-		Treatment 3         & 0.0009271           & 0.296               \\
+		65		& 74,750,000	& to distribute in PreSale and RIPA TEC	\\
+		15      & 17,250,000	& to the RIPA Founders Team	\\
+		6       & 6,900,000		& for marketing	\\
+		5       & 5,750,000 	& for bounties	\\
+		5       & 5,750,000		& for Ripa Community Fund - RCF	\\
+		4       & 4,600,000		& to the ARK Team	\\
 		\bottomrule
 	\end{tabular}
-	\caption{Table caption}
+	\captionof{table}{Ripa token distribution}
+	\label{tab:distribution}
 \end{table}
 
-%------------------------------------------------
+\vspace{5mm}
+\textbf{Tokens not sold during the phases of PreSale and RIPA TEC will be burnt} forever to permits and equal distributions 
+of the funds and avoid speculations on the token remaining.
 
-\section{Figure}\index{Figure}
+\section{Division of Funds}
+The funds collected during the PreSale and RIPA TEC phases will be divided as explained in figure \ref{fig:division} and 
+table \ref{tab:division} below
 
-\begin{figure}[h]
-	\centering\includegraphics[scale=0.5]{placeholder}
-	\caption{Figure caption}
-\end{figure}
+\vspace{5mm}
+\begin{tikzpicture}
+	\pie [rotate = 180, explode={0.1, 0.1, 0.1}, radius = 3]
+	{60/for project development,
+	20/for marketing, 
+	20/for legal support}
+\end{tikzpicture}
+\captionof{figure}{Ripa division of funds}	
+\label{fig:division}
+
+\vspace{5mm}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l l}
+		\toprule
+		\textbf{Percentage (\%)} & \textbf{Purpose} \\
+		\midrule
+		60		& for project development	\\
+		20		& for marketing	\\
+		20		& for legal support	\\
+		\bottomrule
+	\end{tabular}
+	\captionof{table}{Division of funds}
+	\label{tab:division}
+\end{table}
+
+\vspace{5mm}
+where the row project development funds allocation is described in table \ref{tab:focus} below.
+
+\vspace{5mm}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l l}
+		\toprule
+		\textbf{Percentage (\%)} & \textbf{Purpose} \\
+		\midrule
+		55		& functional analysis, technical analysis, development, testing	\\
+		15		& infrastructure	\\
+		10		& security	\\
+		20		& technical support	\\
+		\bottomrule
+	\end{tabular}
+	\captionof{table}{Project development focus}
+	\label{tab:focus}
+\end{table}
 
 %----------------------------------------------------------------------------------------
-%	CHAPTER 6: Conclusion
+%	CHAPTER 6: Economic Projections
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_6_Frankfurt.jpg} % Chapter heading image
 
-\chapter{Team \& Conclusion}
+\chapter{Economic Projections}
 
+\section{Market Overview}
 
+\section{Local Market Analysis}
+
+\section{5 Years Projections}
 %----------------------------------------------------------------------------------------
-%	CHAPTER 7: Legal
+%	CHAPTER 7: Conclusion
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_7_LosAngeles.jpg} % Chapter heading image
 
-\chapter{Termini e Condizioni}
+\chapter{Team \& Conclusion}
+
+\section{Team}
+
+\section{Recommendations}
+
+\section{Social}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 8: Legal
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_8_KualaLumpur.jpg} % Chapter heading image
+
+\chapter{Legal}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\chapterimage{chapter_head_8_KualaLumpur.jpg} % Chapter heading image
+\chapterimage{chapter_head_9_Milan.jpg} % Chapter heading image
 
-\addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Riferimenti}}
+\addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{References}}
 \nocite{*}
-\printbibliography[title={Riferimenti}]
+\printbibliography[title={References}]
 %------------------------------------------------
 
 

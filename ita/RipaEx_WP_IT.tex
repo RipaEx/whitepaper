@@ -536,11 +536,11 @@ equal height group=nobefaf,width=(\linewidth-1pt)/3, height=4.5cm, nobeforeafter
 
 \section{Analisi Funzionale}
 \begin{enumerate}
-	\item \textsc{Why Redis-RabbitMQ is needed}:
-	\item \textsc{Why NodeJS}: 
-	\item \textsc{Why Pusher}:
+	\item \textsc{Cosa serve Redis-RabbitMQ}:
+	\item \textsc{Cosa serve NodeJS}: 
+	\item \textsc{Cosa serve Pusher}:
 	\item \textsc{ER MySQL}:
-	\item \textsc{Ruby folders hierarchy}:
+	\item \textsc{Ruby gerarchia directory}:
 \end{enumerate}
 
 \section{Stack Tecnologico}
@@ -553,64 +553,66 @@ equal height group=nobefaf,width=(\linewidth-1pt)/3, height=4.5cm, nobeforeafter
 	\item[\textsc{Pusher}]:
 \end{description}
 
-\section{User Interface}
-Ripa Exchange user interface is based on Peatio user interface a UI responsive user interface built in Ruby on Rails and 
-completely separated from the exchange order engine.
-Design for a customised UI are in place to offer to Ripa Exchange users the best experience on all devices: here you can find
-some screenshot of the current exchange interface design.
+\section{Interfaccia Utente}
+La user interface di Ripa Exchange è basata sulla user interface di Peatio una UI responsiva sviluppata in Ruby on Rails e 
+completamente separata dall'engine ordini dell'exchange.
+Il design per una UI personalizzata sono in corso per offrire agli utenti Ripa Exchange la miglior esperienza utente in ogni
+dispositivo: in questa sezione potete trovare alcuni screenshot della UI attuale dell'exchange.
 
-\subsection{End-User Interface}
-Following some screenshot of the end-user Ripa Exchange-Peatio interface: 
-\textcolor{darkred}{those screenshots are a work in progress and they may not represents the user interface of the final product}\\
+\subsection{Interfaccia End-User}
+Di seguito alcuni screenshot dell'interfaccia utente end-user dell'exchange Ripa:
+\textcolor{darkred}{questi screenshot sono un lavoro in corso e non è detto che rappresentino l'interfaccia utente del prodotto finale}\\
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_TradingUIC}
-	\captionof{figure}{Ripa Exchange trading UI}
+	\captionof{figure}{UI di trading di Ripa Exchange}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_depositBTCC}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_historyC}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_solvencyC}
-	\captionof{figure}{Ripa Exchange deposit/whitdraw, order history and solvency screen}
+	\captionof{figure}{UI di deposio/prelievo, storico ordini e solvibilità}
 \end{center}
 
 \subsection{Admin Interface}
-Following some screenshot of the administrative console of Ripa Exchange-Peatio interface: 
-\textcolor{darkred}{those screenshots are a work in progress and they may not rapresents the user interface of the final product}\\
+Di seguito alcuni screenshot dell'interfaccia utente dell'area amministrativa dell'exchange Ripa:
+\textcolor{darkred}{questi screenshot sono un lavoro in corso e non è detto che rappresentino l'interfaccia utente del prodotto finale}\\
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDashboardC}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDepositsC}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminWithdrawsC}
-	\captionof{figure}{Ripa Exchange Admin console dashboard, deposit/whitdraw screen}
+	\captionof{figure}{Admin console dashboard, sezioni di deposito/prelievo}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminUserInfo1C}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminVerifyAccountC}
-	\captionof{figure}{Ripa Exchange Admin user info and verify account screen}
+	\captionof{figure}{Sezione informazioni utente e verifica utente}
 \end{center}
 
-\section{Features at Launch}
+\section{Funzionalità al Lancio}
 \begin{description}
 	\item[\textsc{CRYPTO <-> CRYPTO}]:
 	\item[\textsc{OAuth}]: Facebook, Google, Twitter
-	\item[\textsc{FIDO}]: login with FIDO Alliance standards
-	\item[\textsc{Protocols}]: POW, DPOS, Masternode, tether, ERC20
-	\item[\textsc{Currencies}]: BTC, ETH, DOGE, BCH, TUSD, ARK, LISK, SHIFT, RISE, KAPU, OXY, RIPA, promising ERC20 tokens
-	\item[\textsc{Main Markets}]: BTC, ETH, ARK
-	\item[\textsc{Orders Type}]: market, limit
+	\item[\textsc{FIDO}]: login con standard FIDO Alliance
+	\item[\textsc{Protocolli}]: POW, DPOS, Masternode, tether, ERC20
+	\item[\textsc{Valute}]: BTC, ETH, DOGE, BCH, TUSD, ARK, LISK, SHIFT, RISE, KAPU, OXY, RIPA, promising ERC20 tokens
+	\item[\textsc{Mercati Principali}]: BTC, ETH, ARK
+	\item[\textsc{Tipo di Ordini}]: market, limit
 \end{description}
 
-\subsection{Future Features}
+\subsection{Funzionalità Future}
 \begin{description}
 	\item[\textsc{E-Wallets}]: OKPay, NETELLER, MoneyPolo, others...
-	\item[\textsc{Advanced Trading Features}]: margin trading, stop loss and take profit, 
+	\item[\textsc{Funzionalità di Trading Avanzate}]: margin trading, stop loss and take profit, 
 	\item[\textsc{FIAT <-> CRYPTO}]
-	\item[\textsc{Other tools}]: VISA/MasterCard, merchants tools, P2P Lending 
+	\item[\textsc{Altre funzionalità}]: VISA/MasterCard, merchants tools, P2P Lending 
 \end{description}
 
 
-\section{Towards a Decentralized Exchange...}
-Ripa Exchange is a centralized exchange which will be converted into an hybrid-decentralized exchange to create a network of exchanges
-that share the same liquidity between each of them so you can offer liquidity from day 1 of your exchanges operations.\\
+\section{Verso un Exchange Decentralizzato...}
+Ripa Exchange è un exchange centralizzato che sarà convertito in un ibrido-decentralizzato per creare una rete di exchange
+che condividono lo stesso codice sorgente e la stessa liquidità in modo tale che tu possa offrire liquitià ai tuoi clienti 
+già dal giorno 1 di apertura degli scambi finanziari.\\
 
-To offer the PROs of a centralized exchange with all the PROs of a decentralized exchange without the CONs of both of them, 
-we need to convert first into an hybrid-decentralized exchange and during phase 3 of our project (WP4-6) we will make all the 
-functional and technical analysis required to make the next step on solid ground.
+Per offrire i PRO di un exchange centralizzato (supporto di livello platinum, scambio FIAT) e di un exchange decentralizzato
+(liquidità) senza i CONTRO di entrambi, dovremo eseguire questa passaggio con lo step intermedio di un exchange 
+ibrido-decentralizzato e durante la fase 3 del progetto RipaEx (WP 4-6) esguiremo tutte le analisi funzionali e tecniche 
+richieste per costruire il prossimo passo su fondamenta solide. 
 
 %----------------------------------------------------------------------------------------
 %	PART
@@ -623,34 +625,35 @@ functional and technical analysis required to make the next step on solid ground
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_4_Dubai.jpg} % Chapter heading image
-\chapter{The Ripa Blockchain}
-The project RipaEx will have its own blockchain called Ripa which will be run on the DPOS protocol and has the \PHP 
-token (XPX symbol) running on it that will serve the five following purposes:
+\chapter{La Blockchain Ripa}
+Il progetto RipaEx avrà la propria blockchain che sarà denominata Ripa, securizzata tramite il protocollo DPOS e
+con il proprio token \PHP (simbolo XPX) scambiato su di essa che servirà a svolgere le seguenti funzioni:
 	\begin{enumerate}
-		\item to list new cryptocurrencies on Ripa Exchanges
-		\item to advertise new projects
-		\item to buy RipaEx gadget on Ripa Exchange Store
-		\item to pay for the sell of goods \& services on authorized resellers with our RipaEx POS (Point of Sale)
-		\item to share liquidity between Ripa Exchanges in the same network
+		\item per listare nuove valute nell'exchange
+		\item per pubblicizzare nuovi progetti
+		\item per comprare gadget RipaEx nello Store Ripa Exchange
+		\item per pagare per l'acquisto di beni e servizi in rivenditori autorizzati tramite il RipaEx POV (Punto di Vendita)
+		\item per condividere liquidità tra tutti gli exchnage della rete Ripa
 	\end{enumerate}
 
-Ripa \PHP or XPX is a cryptocurrency derivate from ARK, Lisk, Crypti and BitShares with unique differences and improvements
-for reaching the goal of shared liquidity between exchanges in the same Ripa network. This code however inherits the 
-simplified interactions between ARK and other blockchain systems using DPoS as their consensus. This homogeneous codebase
-allows for the potential to provide service bridges in the form of ARK-Lisk blockchain apps, along with any other additional 
-systems provided by their blockchain administrators.
+Il token \PHP o XPX è una criptovaluta derivata da ARK, Lisk, Crypti e BitShares con differenze uniche e miglioramenti per 
+raggiungere l'obbiettivo di condividere liquidità tra tutti gli exchange della rete Ripa. Tuttavia questo codice eredita
+le transazioni semplificate tra le blockchain basate su ARK ed il consenso DPOS. Questo codice sorgente omogeneo 
+permette lo sviluppo di potenziali servizi intra-blockchain nella forma di app ARK ed assieme ad altri sistemi addizionali
+forniti dagli amministratori delle blockchain rispettive.
 
 \vspace{5mm}
-\textsc{\textbf{Ripa blockchain is an ARK fork and the use of a blockchain technology for the network of exchanges created will complete
-the ripa ecosystem by permitting each exchange in the ripa network to share the same liquidity. We will always entrust ARK as our 
-blockchain technology provider to merge their code into our latest features for what concerning the RIPA Blockchain}}
+\textsc{\textbf{La blockchain Ripa è un fork di ARK e la creazione di tale blockchain serve per completare l'ecosistema Ripa
+permettendo ogni exchange nella rete Ripa di condividere la stessa liquidità. Noi ci fideremo sempre di ARK come nostro
+fornitore di tecnologia blockchain per mergiare il loro codice nel nostro per tutto ciò che riguarda la blockchain Ripa}}
 
 \vspace{5mm}
 
-Explained the use of the Ripa Blockchain in the RipaEx ecosystem and explained the RIPA - ARK technological relations what is 
-following are the specifications of the Ripa Blockchain derived/inherited from ARK.
+Spiegato l'uso della blockchain Ripa all'interno dell'ecosistema RipaEx e spiegato il legame di partnership tecnologica
+RIPA - ARK nelle seguenti sezioni potete trovare le specifiche della blokchain Ripa che sono derivata da ARK ed alcune sviluppate 
+"ad hoc" per l'ecosistema Ripa.
 
-\section{Delegated Proof of Stake Technology}
+\section{Tecnologia Delegated Proof of Stake}
 Ripa Blockchain, will inherits the Delegated Proof of Stake (DPoS) consensus system that was first introduced
 by BitShares. This consensus algorithm was designed to eliminate the issues associated with Proof of Work (PoW), 
 namely the centralization of computing power and the exponentially increasing waste of real world energy. While not

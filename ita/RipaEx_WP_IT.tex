@@ -289,7 +289,7 @@ La governance per la rete di exchange creati, lo sviluppo del codice sorgente, i
 	sviluppatori di exchange oppure imprenditori in questo campo, per abilitare processi di decision-making corretti e per 
 	assicurare il successo dei loro progetti proposti.
 	IT SEEKS di analizzare il potenziale reale di applicazione nel Paese scelto di una rete di exchange e la sua posizione nel mercato.
-	\item \textsc{cosa}: gli asset crittograficamente sicuri (aka: "crypto assets") sono un'alternativa agli asset emessi dalle borse
+	\item \textsc{cosa}: gli asset crittograficamente sicuri (aka: ``crypto assets'') sono un'alternativa agli asset emessi dalle borse
 	valori dei vari Paesi che ne possiedono una. Anche se, tuttavia, molte borse valori mondiali danno la possibilità ai loro 
 	utenti di verificare e gestire gli asset in loro possesso il processo non è sempre trasparente e semplice da fare e questo è il motivo 
 	per cui a partire dal 2009 \cite{bitcoin} un nuovo tipo di asset (verificabile dalla comunità) è stato implementato
@@ -358,7 +358,7 @@ La governance per la rete di exchange creati, lo sviluppo del codice sorgente, i
 	piattaforma	crypto asset marketplace per permettere le future personalizzazioni del proprio exchange in maniera indipendente invece di affidarsi
 	ad una singola software house che esegua le personalizzazioni per voi.
 	\item \textsc{come}: possibili operazioni per trovare nuovi utenti per le vostre operazioni di cambia valuta virtuale sono:
-	campagne di marketing "ad hoc", funzionalità innovative nell'industria, livelli di tassazione del trading basati sulla quantità, 
+	campagne di marketing ``ad hoc'', funzionalità innovative nell'industria, livelli di tassazione del trading basati sulla quantità, 
 	bonus di registrazione e per quantità di scambiato giornaliero/settimanale/mensile, marketing affiliato per gli utenti che portano
 	amici a scambiare nell'exchange.
 	\item \textsc{come}: per incorporare una crypto asset marketplace un progetto deve tenere in considerazione la seguente legislazione:
@@ -443,7 +443,7 @@ La governance per la rete di exchange creati, lo sviluppo del codice sorgente, i
 
 \chapter{L'Exchange Ripa}
 Ripa Exchange è un crypto asset marketplace implementato seguendo i più avanzati standard industriali seguendo il principio
-"\textit{open source, sicuro ed efficiente}". Ripa Exchange si prefigge di servire come piattaforma sicura, UI responsive, 
+``\textit{open source, sicuro ed efficiente}''. Ripa Exchange si prefigge di servire come piattaforma sicura, UI responsive, 
 personalizzabile, facile da usare per gli imprenditori in questo settore abbracciando i principi Open Source e la fiducia pubblica.\\\\
 Ripa Exchange è implementato utilizzando il framework Ruby on Rails ed altre tecnologie all'avanguardia e sarà migrato verso
 un exchange ibrido-decentralizzato dove tutti gli exchange nella rete Ripa condivideranno la stessa liquidità grazie alla tecnologia R.L.S.P..
@@ -655,165 +655,167 @@ RIPA - ARK nelle seguenti sezioni potete trovare le specifiche della blokchain R
 ``ad hoc'' per l'ecosistema Ripa.
 
 \section{Tecnologia Delegated Proof of Stake}
-Ripa Blockchain, will inherits the Delegated Proof of Stake (DPoS) consensus system that was first introduced
-by BitShares. This consensus algorithm was designed to eliminate the issues associated with Proof of Work (PoW), 
-namely the centralization of computing power and the exponentially increasing waste of real world energy. While not
-completely decentralized as it relies on consensus by a fixed number of elected delegates, it guarantees a better decentralization 
-than Bitcoin. The consensus algorithm implementation is improved over time, evolving into an optimal consensus system.\\
+Ripa Blockchain eredita il sistema di consenso Delegated Proof of Stake (DPoS) che è stato inizialmente
+introdotto da BitShares. Questo algoritmo di consenso è stato progettato per eliminare i problemi dell'algoritmo
+Proof of Work (PoW), nello specifico la centralizzazione del potere computazionale e l'esponenziale uso di energia
+elettrica. Anche se non completamente decentralizzato in quanto si basa su di un numero fisso di delegati eletti
+dalla comunità, il DPoS garantisce migliore decentralizzazione di Bitcoin. L'algoritmo di consenso è migliorato
+con il tempo, evolvendo in una procedura di consenso ottimale con il tempo.\\
 
-The technical description of the Ripa blockchain is as follow:
+Le specifiche tecniche di Ripa Blockchain sono le seguenti:
 \begin{enumerate}
 	\item DPoS (Delegated Proof of Stake)
 	\begin{itemize}
-		\item 101 active forging Delegates
-		\item Delegates selected by vote mechanism built into DPoS
-		\item 115,000,000 RIPA - Seeded Genesis Block
+		\item 101 delegati forgiani
+		\item Delegati selezionati mediate un meccanismo di voto insito nel sistema DPoS
+		\item 115,000,000 RIPA - Forgiati nel Genesis Block
 	\end{itemize}
-	\item Multi-signature accounts
-	\item Constant block reward
+	\item Account Multi-firma
+	\item Reward di Blocco Costante
 	\begin{itemize}
-		\item 2 \PHP per block
-		\item Inflation Rate (with 8s block times)
+		\item 2 \PHP per blocco
+		\item Livello di Inflazione (con blocco da 8s)
 		\begin{itemize}
-			\item 6.31\% for the first year
-			\item 5.93\% the 2nd year
-			\item 4.02\% the 10th year
+			\item 6.31\% per il primo anno
+			\item 5.93\% il secondo anno
+			\item 4.02\% il decimo anno
 		\end{itemize}
-		\item 8-second block time
+		\item Tempo di forgiatura blocco di 8 secondi
 		\begin{itemize}
-			\item Decreased block time possible with future upgrades to the core.
+			\item Tempo di forgiatura blocco riducibile nel tempo con aggiornamenti futuri del core.
 		\end{itemize}
-		\item 25 transactions per block
+		\item 25 transazioni per blocco
 		\begin{itemize}
-			\item Increased via soft fork as needed.
+			\item Incrementabile con soft fork se richiesto.
 		\end{itemize}
 	\end{itemize}
-	\item Routing tables
-	\item SmartBridge data field for custom use and bridging blockchains (ARK Contract Execution Service)
-	\item Batch transactions\footnote{Future upgrade: when ARK 2.0 will be released \label{note1}}
-	\item Custom transaction fees\footnotemark[\value{footnote}]
-	\item Native smart contract execution\footnote{Future upgrade: when ARK Virtual Machine will be released}
+	\item Tabelle di routing
+	\item Campo SmartBridge per uso con blockchain connesse alla blockchain ARK principale (ARK Contract Execution Service)
+	\item Transazioni batch\footnote{Aggiornamento futuro: quando ARK 2.0 sarà rilasciata \label{note1}}
+	\item Fee di transazione personalizzabili\footnotemark[\value{footnote}]
+	\item SmartContract nativi\footnote{Aggiornamento futuro: quando ARK Virtual Machine sarà rilasciata}
 \end{enumerate}
 
 \vspace{5mm}
-\textsc{\textbf{As said Ripa blockchain is an ARK fork and we will entrust ARK as our blockchain technology provider to merge their 
-code into our latest features for what concerning the RIPA Blockchain}}, features like:
+\textsc{\textbf{Come detto Ripa Blockchain è un fork di ARK e noi ci fideremo sempre di ARK come nostro provider di tecnologia 
+di fiducia per mergiare il loro codice nelle nostre ultime funzionalità per tutto ciò che concerne lo sviluppo di 
+Ripa Blockchain}}, funzionalità quali:
 \begin{itemize}
-	\item \textbf{Scaling network} up to the level of major Credit Card networks with core upgrades
+	\item \textbf{Scalabilità della rete} al livello delle reti di Carte di Credito più diffuse con aggiornamento del core
 	\begin{itemize}
-		\item Increasing the number of Forging Delegates
-		\item Increasing the Block Size to include more transactions
-		\item Implementation of pre-approval PBFT block concept testnet [codename:
-		TwinChain]
-		\item Routing tables, to minimize hops among nodes when blocks are broadcast
-		\item Include forging with RIPA Uncles.	
+		\item Aumentare il numero dei delegati forgianti
+		\item Aumentare le dimensioni del blocco per includere più transazioni
+		\item Implementazione del concetto di blocchi pre-approvati PBFT in testnet [nome in codice: TwinChain]
+		\item Tabelle di routing per minimizzare i salti tra i nodi quando i blocchi sono trasmessi
+		\item Inclusione di forgiato con nipoti RIPA
 	\end{itemize}
-	\item \textbf{Two node types} is used to secure the RIPA network:
+	\item \textbf{Due tipi di nodi} sono usati per sicurizzare la rete RIPA:
 	\begin{itemize}
-		\item \textbf{Relay nodes} - Nodes with full API functionality, acting as a back-end for the
-		feature rich lite clients. Relay nodes do not collect any transaction fee and do
-		not have the ability to Forge RIPA Blocks.
-		\item \textbf{Forging nodes} - Nodes with reduced API functionality, decreasing the
-		exposure to potential DDoS attacks on the RIPA Platform. Forging nodes are
-		able to Forge RIPA and receive transaction fees.
+		\item \textbf{Nodi di trasmissione} - Nodi con funzionalità di API che servono come back-end per servizi terzi
+		(es: lite clients). I nodi di trasmissione non forgiano blocchi e non quadagnano XPX per le transazioni.
+		\item \textbf{Nodi forgianti} - Nodi con funzionalità API ridotta per abbassare l'esposizione a potenziali
+		attacchi DDoS alla piattaforma RIPA. I nodi forgianti forgiano XPX e ricevono commissioni di transazione.
 	\end{itemize}
-	\item \textbf{Official lite client} for network access is be provided shortly before the mainnet
-	launch including desktop clients (Windows, MacOS, and Linux) and mobile clients
-	(Android and iOS).
-	\item \textbf{OffLine wallet creation}: the network itself does not use a Graphical User Interface by default. Any RIPA
-	account can be created off-line and managed at no cost with a single device
-	(computer, mobile phone, embedded ARM, IoT).
+	\item \textbf{Lite client ufficiale} per l'accesso al network è forinito poco dopo il lancio della mainnet ed 
+	include il client desktop (Windows, MacOS e Linux) ed il client mobile (Android ed iOS)
+	\item \textbf{Creazione offline di indirizzi}: la rete di per se non ha una Interfaccia Grafica Utente di 
+	default, ogni account RIPA può essere creato off-line e gestito a costo zero su di un singolo dispositivo
+	(computer, smartphone, tablet, ARM, IoT).
 \end{itemize}
 
 \section{Hierarchical Deterministic (HD) Wallets (BIP32)}
-The structure of the public and private key generation follows the same specification
-as Bitcoin. A custom implementation of BIP32 for Hierarchical Deterministic Wallets
-is provided to RIPA users.
+La struttura della chiave pubblica e privata di RIPA segue le stesse specifiche di Bitcoin. Una implementazione
+personalizzata del protocollo BIP32 per Wallet Hierarchical Deterministic è fornita agli utenti RIPA.
 
-\section{Fees}
-The fee for standard transactions is set at \PHP0.1 but the will be flexible in future releases of Ripa Blockchain.
-At mainnet launch, a fee structure is provided out of the box to forging delegates with the following rules:
+\section{Commissioni}
+Le commissioni per una transazione standard sono \PHP0,10 ma saranno flessibili in futuri rilasci di Ripa Blockchain.
+Al lancio della mainnet, la struttura delle commissioni è fornita preconfigurata e pronta all'uso ai delegati
+forgianti secondo le seguenti regole:
 	\begin{itemize}
-		\item Transaction \PHP0.1
-		\item Vote \PHP1 (101 votes per transaction)
-		\item Second Signature \PHP1
-		\item Multi Signature \PHP1 per signature + \PHP1 per signing account
-		\item Registering a delegate \PHP25.
+		\item Transazione \PHP0.1
+		\item Voto \PHP1 (101 voti per transazione)
+		\item Seconda Firma \PHP1
+		\item Multi Firma \PHP1 per firma + \PHP1 per account firmatario
+		\item Registrazione di un delegato \PHP25.
 	\end{itemize}
-All fees are paid to the forging node which processes the block containing those fees.
+Tutte le commissioni sono pagate ai nodi forgianti che processano i blocchi contenenti quelle commissioni.
 
-\section{Ripa Delegates and Delegate Voting}
-Any node running the core blockchain code wishing to become a forging node must
-register their account within the RIPA network. The fee for this registration is set to
-25 \PHP per delegate account registered.
-RIPA incorporates a new DPoS voting system originally envisioned by the Crypti
-Founders. The RIPA system fee is 1 \PHP per delegate vote. The voting weight of each
-wallet will be split evenly between all delegates voted. For example:
+\section{Delegati Ripa e Votazione}
+Ogni nodo che esegue il codice della blockchain Ripa che vuole forgiare blocchi deve registrarsi come 
+delegato pagando la commissione di 25 \PHP. Ripa incorpora un nuovo sistema di voto DPoS
+originariamente progettato dai fondatori di Crypti. La commissione di voto è di 1 \PHP, 
+il peso di voto di ciascun wallet è suddiviso equamente tra tutti i delegati votati 
+nella transazione. Ad esempio: 
 \begin{itemize}
-	\item If a wallet votes for one delegate, that delegate receives 100\% of the wallets
-voting weight.
-	\item If that wallet votes for an additional delegate, the entire vote weight is split
-evenly between the two delegates at 50\%.
-	\item By adding a third delegate, the voting weight splits again, and each of the
-three delegates receives 33.333\% of the voting weight from that wallet.
+	\item Se un wallet vota per un delegato, il delegato riceve il 100\% del peso di voto del
+	wallet.
+	\item Se il wallet vota per un delegato addizionale, il peso di voto totale è 
+	suddiviso equamente tra entrambi i delegati al 50\%.
+	\item Aggiungendo un terzo delegato, il peso di voto è suddiviso nuovamente, 
+	ed ogniuno dei tre delegati riceve il 33,333\% del peso di voto del wallet.
 \end{itemize}
 
-The 101 forging nodes with the highest number of votes are eligible to Forge RIPA
-blocks. This design eliminates the possibility that any single large RIPA holder or an
-organization holding large percentages of RIPA are able to gain control over the
-entire network by voting for all of their nodes into forging positions, thus effectively
-taking complete control over that DPoS Blockchain. Votes from RIPA Tokens held by
-RIPA Crew may be used at RIPA Crew's discretion.
+I 101 delegati forgianti con il numero di voti maggiore sono elegibili per forgiare blocchi
+RIPA. Questa progettazione elimina la possibilità che un singolo grande possessore di
+RIPA oppure un'organizzazione che detiene una larga percentuale di RIPA siano in grado
+di prendere il controllo della rete nella sua interessa mediante il voto dei loro nodi
+ponendoli in posizione di nodi forgianti, prendendo, effettivamente controllo dell'
+intera rete. I voti provenienti dai token RIPA in possesso del Ripa Founder Team
+possono essere usati a sola discrezione del team Ripa.
 
-\section{Connecting Blockchains}
-\subsection{ARK Bridged Blockchains (SmartBridge Technology)}
-The ARK Platform does not provide direct support for sidechains or dapp databases.
-Instead, a mechanism to bridge together blockchains is provided via a bridging
-function built into ARK Core where any blockchain can send and receive trigger
-function notices and informational data through the primary ARK network via
-custom developed \textbf{SmartBridge(s)} and \textbf{Encoded Listeners}.
+\section{Collegamenti tra Blockchain}
+\subsection{Blockchain Connesse ARK (Tecnologia SmartBridge)}
+La piattaforma ARK 1.0 non fornisce supporto diretto per sidechain o dapp. Invece
+un meccanismo per connettere direttamente blockchain tra loro e con la blockchain ARK
+è fornito tramite una funzione ponte codificata direttamente nel core ARK in cui
+ogni blockchain può inviare e ricevere funzioni attivabili a comando e dati
+informativi passando per la rete ARK principale tramite \textbf{Endoded Listeners}
+e \textbf{SmartBridge} appositamente sviluppati.
 \begin{center}
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ARKSmartBridge}
-	\captionof{figure}{ARK SmartBridge Technology}
+	\captionof{figure}{ARK Tecnologia SmartBridge}
 \end{center}
 
 \subsection{A.C.E.S. - ARK Contract Execution Service}
-ACES is a blockchain interoperability platform that provides simple protocols and tools for building a robust blockchain 
-service marketplace.
+ACES è una piattaforma di interoperabilità tra blockchain che fornisce protocolli semplificati
+e strumenti per costruire mercati di scambio servizi tra blockchain robusti.
 
-ACES is composed mainly of the following three components:
+ACES è composta principalmente dai tre componenti seguenti:
 \begin{itemize}
-	\item \textbf{Listeners} ACES Listeners provide a way for all the different blockchain transaction events to be easily 
-	consumed via a common REST-ful API. The API allows consumers to create subscriptions and receive blockchain events 
-	in real-time using Webhook callbacks.
-	\item \textbf{Services} ACES Services create and execute Service Contracts, which can be anything from uploading 
-	a file to a storage blockchain, performing value transfers, creating smart contracts, executing code on 
-	blockchain based computing platforms, or interacting with IoT hardware.
-	\item \textbf{Marketplace Console} The ACES Marketplace Console is a consumer dashboard for searching and executing 
-	service contracts listed on the Marketplace. ACES Service providers can list their service nodes using the Marketplace API.
+	\item \textbf{Listener} i Listener ACES forniscono una via per tutti gli eventi delle diverse
+	blockchain per essere facilmente consumanti via servizi REST. Le API permettono agli utenti
+	di creare sottoscrizioni e ricevere eventi blockchain in tempo-reale usando callback Webhook.
+	\item \textbf{Servizi} ACES che creano ed eseguono Service Contract, che possono essere qualsiasi
+	cosa da caricare un file in una blockchain di dati, ad eseguire trasmissione di valore,
+	creare smart contract, eseguire codice su di una piattaforma di computer distribuita, oppure
+	interagire con dispositivi IoT.
+	\item \textbf{Console di Mercato} di ACES è una dashboard utente per cercare ed eseguire Service
+	Contract listati nel marketplace. I provider ACES possono listare i servizi dei loro nodi 
+	usando le API del marketplace.
 \end{itemize}
 
 \begin{center}
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ACES}
-	\captionof{figure}{ARK-BTC A.C.E.S. SmartBridge Implementation Overview}
+	\captionof{figure}{Implementazione SmartBridge ARK-BTC di A.C.E.S.}
 \end{center}
 
 \section{Ripa Liquidity Service Provider (R.L.S.P)}
-Using the SmartBridge technology RipaEx will build a mechanism to share liquidity between all the exchanges in the Ripa network
-by writing the single exchange orderbook in the Ripa Blockchain and by executing order matching between all exchanges in the network.
+Usando la tecnologia SmartBridge RipaEx svilupperà un meccanismo per condividere liquidità tra tutti gli exchange della rete
+Ripa scrivendo i singoli orderbook in Ripa Blockchain ed eseguendo accoppiamento di ordini tra tutti gli exchange della rete.
 
-In this way you can have the benefits of a decentralized orderbook (like liquidity) with the benefits of a centralized exchange (like
-platinum customer support and FIAT exchange).
+In questo modo puoi avere i benefici di un exchange decentralizzato (come ad esempio la liquidità) con i benefici di un 
+exchange centralizzato (come ad esempio customer support di livello platinum e scambio FIAT).
 
 \section{Ripa Community Fund}
-To permits the born of new exchanges in the Ripa network a Ripa Community Fund - RCF - is created with the following characteristics:
+Per permettere la nascita di nuovi exchange nella rete Ripa viene creato all'avvio del progetto il Fondo Comunitario Ripa - RCF - 
+con le seguenti caratteristiche:
 \begin{itemize}
-	\item \textbf{Starting Principal}: the RCF will have a starting operating capital of 5\% (5,750,000 \PHP) of the genesis block
-	\item \textbf{Recurring Participation}: each delegate will contribute to the RCF with 5\% of its forged XPXs
+	\item \textbf{Fondi di Partenza}: l'RCF avrà un capitale iniziale operativo pari al 5\% (5.750.000 \PHP) del blocco genesis
+	\item \textbf{Fondi Ricorrenti}: ogni delegato contribuirà all'RCF con il 5\% degli XPX forgiati settimanalmente
 \end{itemize}
 \vspace{5mm}
-To obtain funds from the RCF to start your own Ripa Exchange you will submit your proposal in the official RCF section in the Ripa forum at
-anytime after the first Ripa Exchange instance will be operative.
+Per ottenere i fondi dell'RCF per avviare il tuo Ripa Exchange devi inoltrare il tuo proposal nel sito ufficiale dell'RCF oppure
+nella sezione RCF del forum Ripa in qualsiasi momento dopo l'avvio della prima istanza funzionante di Ripa Exchange.
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 5: Token Sale

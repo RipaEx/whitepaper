@@ -1096,7 +1096,7 @@ Following the matrix of development per area of interest based on the funds coll
 			and Coinbase, the largest US-based exchange, saw account hacking double just between November and December 2016.
 		\end{itemize}
 
-\section{Local Market Analysis and 5 Years Projections}
+\section{Local Market Analysis and 5 Years Projection}
 Ripa Exchange on its opening at the beginning of next year and for all the year 2019 is to be expected
 to have the following operating numbers:
 \begin{itemize}
@@ -1111,15 +1111,22 @@ outcome for the years 2 to 5 is expected to be in the rage described in figure \
 	\begin{tikzpicture}
 		\begin{axis}[
 			symbolic x coords={2019, 2020, 2021, 2022, 2023},
-			xtick=data
+			xtick=data,
+			ylabel=BTC,
+			xlabel=years
 		]
-			\addplot[ybar,fill=blue] coordinates {
+			\addplot[ybar,fill=azure(colorwheel)] coordinates {
 				(2019, 180)
 				(2020, 300)
 				(2021, 500)
 				(2022, 1000)
 				(2023, 2000)
 			};
+			\addplot+ [
+				sharp plot,
+				] coordinates {
+				(2019,180) (2020,300) (2021,500) (2022,1000) (2023,2000)
+				};			
 		\end{axis}	
 	\end{tikzpicture}
 	\captionof{figure}{5 years revenue projection}

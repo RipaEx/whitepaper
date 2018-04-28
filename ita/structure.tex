@@ -25,6 +25,7 @@
 \graphicspath{{../img/}} % Specifies the directory where pictures are stored
 
 \usepackage{lipsum} % Inserts dummy text
+\usepackage{fontawesome}
 
 \usepackage{tikz} % Required for drawing custom shapes
 \usepackage[many]{tcolorbox}
@@ -37,6 +38,7 @@
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
 
 \usepackage{booktabs} % Required for nicer horizontal rules in tables
+\renewcommand{\labelitemi}{\textendash}
 
 \usepackage{xcolor} % Required for specifying colors by name
 \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
@@ -83,6 +85,7 @@
   \stackengine{-1.38ex}{P}{\stackengine{-1.2ex}{$-$}{$-$}{O}{c}{F}{F}{S}}{O}{c}{F}{T}{S}
 }
 \usepackage{pgf-pie}
+\usepackage{pgfplots}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY AND INDEX

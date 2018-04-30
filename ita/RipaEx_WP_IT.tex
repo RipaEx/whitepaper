@@ -56,18 +56,14 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,fleqn,oneside]{book} % Default font size and left-justified equations
-
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
 %----------------------------------------------------------------------------------------
-
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
-
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-
 \begingroup
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture,overlay]
@@ -75,14 +71,31 @@
 \end{tikzpicture}
 \endgroup
 
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
 \newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Copyright \copyright\ 2018 Ripa Founder Team\\ % Copyright notice
+
+\noindent \textsc{Pubblicato da Ripa Founder Team}\\ % Publisher
+
+\noindent \textsc{www.ripaex.io}\\ % URL
+
+\noindent Materiale protetto dalla Licenza MIT (di seguito la ``Licenza''). Non dovrai usare questo file eccetto in conformità con la Licenza. Puoi ottenere una copia della Licenza a \url{https://opensource.org/licenses/MIT}. A meno che non sia richiesto dalla lagislazione applicata o concordato via scritto, il software distribuito con la Licenza è distribuito \textsc{``così com'è'' senza garanzie di alcun tipo}, esplicite o implicite. Fate riferimento alla Licenza per il linguaggio specifico che governa i permessi e le limitazione indicati dalla Licenza.\\ 
+
+\noindent \textit{Prima pubblicazione, Marzo 2018 - versione 0.9} % Printing/edition date
 
 % \begingroup
 % \section{Abstract}\index{Abstract}
 % \thispagestyle{empty}
 % \addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Abstract}}
+\pagestyle{empty} % No headers
 \usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
 \chapter{Abstract}
+
 \textbf{Ripa Exchange è un exchange ibrido-decentralizzato con il focus di abbassare il livello di ingresso per aprire 
 nuove piattaforme di exchange ed al contempo offrire ai traders un ambiente sicuro ed efficiente per eseguire operazioni di 
 trading giornaliere.}\\
@@ -111,10 +124,12 @@ Mentre vogliamo che l'esperienza di trading per l'utente finale sia la migliore 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-
 \chapterimage{chapter_head_1_Beijing.jpg} % Table of contents heading image
+\addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Indice dei Contenuti}}
 \renewcommand*\contentsname{Indice dei Contenuti}
 \tableofcontents % Print the table of contents itself
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+\pagestyle{fancy} % Print headers again
 
 %----------------------------------------------------------------------------------------
 %	PART
@@ -128,7 +143,6 @@ Mentre vogliamo che l'esperienza di trading per l'utente finale sia la migliore 
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_2_London.jpg} % Chapter heading image
-
 \chapter{Introduzione}
 Il livello di accesso all'industria delle valute virtuali è piuttosto elevato da un punto di vista tecnico per l'utente medio, 
 ed ha un livello di accesso economicamente elevato per l'imprenditore che vuole avviare un'attività in questo campo, valore dato 
@@ -175,13 +189,6 @@ compagnia è pianificata per il primo quadrimestre del 2019.
 
 Fino a tale data RFT opera invece di \emph{Ripa Exchange, una compagnia nel processo di essere incorporata}.
 
-
-%------------------------------------------------
-
-%This statement requires citation \cite{article_key}; this one is more specific \cite[162]{book_key}.
-
-%------------------------------------------------
-
 \section{Terminologia}\index{Terminologia}
 \begin{description}
 	\item[\textsc{Ripa Exchange:}] un exchange FIAT $\Leftrightarrow$ CRYPTO sviluppato partendo dal codice sorgente di Peatio \cite{peatio}
@@ -198,11 +205,9 @@ Fino a tale data RFT opera invece di \emph{Ripa Exchange, una compagnia nel proc
 	whitepaper: detto questo “,” rappresenta un punto decimale e “.” rappresenta la separazione tra migliaia e multipli di migliaia 
 \end{description}
 
-%Lists are useful to present information in a concise and/or ordered way\footnote{Footnote example...}.
-\pagebreak
+%\pagebreak
 \section{Roadmap}
-Saranno percorse essenzialmente quattro fasi del progetto RipaEx:\\
-
+Saranno percorse essenzialmente quattro fasi del progetto RipaEx:
 \tcbset{roadmapBox/.style={colback=yellow!10!white,colframe=azure(colorwheel),
 equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobeforeafter,
 	center title,
@@ -220,9 +225,7 @@ equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobef
 	\vspace{1cm}
 	\centering\textbf{\textsc{Prevista fine della fase: Gennaio 2019}}.
 \end{tcolorbox}
-
 \resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
-
 \begin{tcolorbox}[roadmapBox,
 	title=\textbf{\textsc{Apertura del primo exchange e sviluppo di strumenti e risorse (WP3)}}]
 
@@ -234,9 +237,7 @@ equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobef
 	\vspace{1cm}
 	\centering\textbf{\textsc{Prevista fine della fase: Giugno 2019}}.
 \end{tcolorbox}
-
 \resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
-
 \begin{tcolorbox}[roadmapBox,
 	title=\textbf{\textsc{Esecuzione, diffusione (WP 7/8) e Coordinamento del Progetto (WP1)}}]
 
@@ -251,9 +252,7 @@ equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobef
 	Un OVERARCHING pacchetto di lavoro riguardante la gestione del progetto dall'inizio alla fine, 
 	assicurando coordinazione adeguata, quality assurance e controllo del budget (WP1).
 \end{tcolorbox}
-
 \resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
-
 \begin{tcolorbox}[roadmapBox,
 	title=\textbf{\textsc{Sviluppo di un exchange ibrido-decentralizzato (WP 4-6)}}]
 
@@ -459,10 +458,10 @@ un exchange ibrido-decentralizzato dove tutti gli exchange nella rete Ripa condi
 Il supporto tecnico è sempre apprezato: sentitevi liberi di inoltrare pull-request oppure aprire issue nei nostri repository GitHub.
 
 \section{Funzionalità}
-Un libero, trasparente ed internazionalizzato exchange di cryptomonete open source.\\
+Un libero, trasparente ed internazionalizzato exchange di cryptomonete open source.
 
 \tcbset{featureBox/.style={colback=yellow!10!white,colframe=white!20!black,
-equal height group=nobefaf,width=(\linewidth-1pt)/3, height=4.5cm, nobeforeafter,
+equal height group=nobefaf,width=(\linewidth-1pt)/3, height=5.0cm, nobeforeafter,
 	center title,
 	valign=top, halign=left}}
 \begin{tcolorbox}[featureBox,
@@ -561,7 +560,7 @@ dispositivo: in questa sezione potete trovare alcuni screenshot della UI attuale
 
 \subsection{Interfaccia End-User}
 Di seguito alcuni screenshot dell'interfaccia utente end-user dell'exchange Ripa:
-\textcolor{darkred}{questi screenshot sono un lavoro in corso e non è detto che rappresentino l'interfaccia utente del prodotto finale}\\
+\textcolor{darkred}{questi screenshot sono un lavoro in corso e non è detto che rappresentino l'interfaccia utente del prodotto finale}
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_TradingUIC}
 	\captionof{figure}{UI di trading di Ripa Exchange}
@@ -573,7 +572,7 @@ Di seguito alcuni screenshot dell'interfaccia utente end-user dell'exchange Ripa
 
 \subsection{Admin Interface}
 Di seguito alcuni screenshot dell'interfaccia utente dell'area amministrativa dell'exchange Ripa:
-\textcolor{darkred}{questi screenshot sono un lavoro in corso e non è detto che rappresentino l'interfaccia utente del prodotto finale}\\
+\textcolor{darkred}{questi screenshot sono un lavoro in corso e non è detto che rappresentino l'interfaccia utente del prodotto finale}
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDashboardC}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDepositsC}
@@ -989,7 +988,7 @@ tabella \ref{tab:focus} a seguire.
 
 \section{Obbiettivi del Progetto}
 A seguire la matrice di sviluppo per area di interessa basata sulla quantità di fondi raccolti durante le fasi di
-PreSale e RIPA TEC:\\
+PreSale e RIPA TEC:
 \begin{tcbraster}[raster columns=5,raster rows=1,raster height=0.8cm,
 	valign=center, halign=center,
 	enhanced,size=small,sharp corners,colframe=azure(colorwheel),coltext=white,
@@ -1180,21 +1179,17 @@ che servirà ai seguenti scopi:
 	\item per pagare per l'acquisto di beni e servizi in rivenditori autorizzati tramite il RipaEx POV (Punto di Vendita)
 	\item per condividere liquidità tra tutti gli exchnage della rete Ripa
 \end{enumerate}
-
 E' nostro obbiettivo principale che l'economia del token XPX sia in salute per tutta la durata del progetto RipaEx,
 per tale ragione applicheremo strategie di economia di mercato\footnote{Come la bruciatura dei token non coperti
 da fondi di ICO} all'economia dei token XPX per far si che il presso sia in costante ascesa per tutta la durata
 del progetto ed oltre.
-
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 7: Conclusion
 %----------------------------------------------------------------------------------------
 
 \chapterimage{chapter_head_7_LosAngeles.jpg} % Chapter heading image
-
 \chapter{Team e Conclusioni}
-
 \section{Team}
 \begin{tcbraster}[raster columns=1,raster rows=1,raster height=0.4cm,
 	valign=center, halign=center,
@@ -1501,34 +1496,15 @@ Per essere parte della comunità e per imparare meglio cosa facciamo:
 		\end{enumerate}		
 	}
 \end{scriptsize}
+
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
-
 \chapterimage{chapter_head_9_Milan.jpg} % Chapter heading image
-
 \addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Riferimenti}}
 \nocite{*}
 \printbibliography[title={Riferimenti}]
 %------------------------------------------------
-
-
-%----------------------------------------------------------------------------------------
-%	COPYRIGHT PAGE
-%----------------------------------------------------------------------------------------
-
 \newpage
 ~\vfill
-\thispagestyle{empty}
-
-\noindent Copyright \copyright\ 2018 Ripa Founder Team\\ % Copyright notice
-
-\noindent \textsc{Pubblicato da Ripa Founder Team}\\ % Publisher
-
-\noindent \textsc{www.ripaex.io}\\ % URL
-
-\noindent Materiale protetto dalla Licenza MIT (di seguito la ``Licenza''). Non dovrai usare questo file eccetto in conformità con la Licenza. Puoi ottenere una copia della Licenza a \url{https://opensource.org/licenses/MIT}. A meno che non sia richiesto dalla lagislazione applicata o concordato via scritto, il software distribuito con la Licenza è distribuito \textsc{``così com'è'' senza garanzie di alcun tipo}, esplicite o implicite. Fate riferimento alla Licenza per il linguaggio specifico che governa i permessi e le limitazione indicati dalla Licenza.\\ 
-
-\noindent \textit{Prima pubblicazione, Marzo 2018} % Printing/edition date
-
 \end{document}

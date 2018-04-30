@@ -56,18 +56,14 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,fleqn,oneside]{book} % Default font size and left-justified equations
-
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
 %----------------------------------------------------------------------------------------
-
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
-
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-
 \begingroup
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture,overlay]
@@ -75,12 +71,31 @@
 \end{tikzpicture}
 \endgroup
 
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
 \newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Copyright \copyright\ 2018 Ripa Founder Team\\ % Copyright notice
+
+\noindent \textsc{Published by Ripa Founder Team}\\ % Publisher
+
+\noindent \textsc{www.ripaex.io}\\ % URL
+
+\noindent Licensed under the MIT License (the ``License''). You may not use this file except in compliance with the License. 
+You may obtain a copy of the License at \url{https://opensource.org/licenses/MIT}. Unless required by applicable law or agreed to in writing, 
+software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, 
+either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+
+\noindent \textit{First printing, March 2018 - version 0.9} % Printing/edition date
 
 % \begingroup
 % \section{Abstract}\index{Abstract}
 % \thispagestyle{empty}
 % \addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Abstract}}
+\pagestyle{empty} % No headers
 \usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
 \chapter{Abstract}
 \textbf{Ripa Exchange is a hybrid-decentralized exchange with a strong focus on lowering the entry level
@@ -109,19 +124,13 @@ laws in the industry. As we want that the customer experience will be the best (
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-
 %\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
-
 \chapterimage{chapter_head_1_Beijing.jpg} % Table of contents heading image
-% \addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Table of Contents}}
+\addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{Table of Contents}}
 \renewcommand*\contentsname{Table of Contents}
 \tableofcontents % Print the table of contents itself
-
-% \pagestyle{empty} % No headers
-
-% \cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
-
-% \pagestyle{fancy} % Print headers again
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+\pagestyle{fancy} % Print headers again
 
 %----------------------------------------------------------------------------------------
 %	PART
@@ -175,95 +184,80 @@ legal entity whose name will be \emph{Ripa Exchange}. The creation of this compa
 
 To this end, RFT intervenes on behalf of \emph{Ripa Exchange, a company in the process of being incorporated}.
 
-
-%------------------------------------------------
-
-%This statement requires citation \cite{article_key}; this one is more specific \cite[162]{book_key}.
-
-%------------------------------------------------
-
 \section{Key Terminology}
-\begin{description}
-	\item[\textsc{Ripa Exchange:}] a FIAT $\Leftrightarrow$ CRYPTO exchange (a cryptocurrency exchange) based on the source code
-	of Peatio \cite{peatio}
-	\item[\textsc{Ripa Blockchain:}] a DPOS blockchain in which liquidity is exchanged for all the exchanges in the Ripa network
-	\item[\textsc{Ripa Token - XPX:}] a cryptographically secure token exchanged on the Ripa blockchain based on the DPOS protocol
-	\item[\textsc{RIPA:}] the DPOS financial ecosystem composed of Ripa Exchange and Ripa Blockchain
-	\item[\textsc{RIPAEX:}] the name of the project, project website and hosted domain
-    \item[\textsc{RLSP:}] Ripa Liquidity Service Provider, a shared orderbook to exchange orders between exchanges in the same Ripa network
-	\item[\textsc{RipaEx ICO:}] the name of fixed exchange rate token exchange period composed of both the phases of PreSale and RIPA TEC
-	\item[\textsc{ARK:}] a platform for consumer adoption of blockchain technologies \cite{ark}
-	\item[\textsc{ACES:}] Ark Contract Execution Services \cite{aces} provides simple protocols and tools for building a robust 
-	blockchain service marketplace based on the ARK SmartBridge technology
-    \item[\textsc{“,” or “.”:}] The Anglo-Saxon use of decimal points and commas to represent numbers has
-been chosen for the purposes of this document: that is to say that a “.” represents a decimal point, and a “,”
-distinguishes between multiples of thousands, millions and billions.
+	\begin{description}
+		\item[\textsc{Ripa Exchange:}] a FIAT $\Leftrightarrow$ CRYPTO exchange (a cryptocurrency exchange) based on the source code
+		of Peatio \cite{peatio}
+		\item[\textsc{Ripa Blockchain:}] a DPOS blockchain in which liquidity is exchanged for all the exchanges in the Ripa network
+		\item[\textsc{Ripa Token - XPX:}] a cryptographically secure token exchanged on the Ripa blockchain based on the DPOS protocol
+		\item[\textsc{RIPA:}] the DPOS financial ecosystem composed of Ripa Exchange and Ripa Blockchain
+		\item[\textsc{RIPAEX:}] the name of the project, project website and hosted domain
+		\item[\textsc{RLSP:}] Ripa Liquidity Service Provider, a shared orderbook to exchange orders between exchanges in the same Ripa network
+		\item[\textsc{RipaEx ICO:}] the name of fixed exchange rate token exchange period composed of both the phases of PreSale and RIPA TEC
+		\item[\textsc{ARK:}] a platform for consumer adoption of blockchain technologies \cite{ark}
+		\item[\textsc{ACES:}] Ark Contract Execution Services \cite{aces} provides simple protocols and tools for building a robust 
+		blockchain service marketplace based on the ARK SmartBridge technology
+		\item[\textsc{“,” or “.”:}] The Anglo-Saxon use of decimal points and commas to represent numbers has
+		been chosen for the purposes of this document: that is to say that a “.” represents a decimal point, and a “,”
+		distinguishes between multiples of thousands, millions and billions.
     \end{description}
 
-%Lists are useful to present information in a concise and/or ordered way\footnote{Footnote example...}.
-\pagebreak
+%\pagebreak
 \section{Roadmap}
-There are essentially four phases to the RipaEx project:\\
-
+There are essentially four phases to the RipaEx project:
 \tcbset{roadmapBox/.style={colback=yellow!10!white,colframe=azure(colorwheel),
 equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobeforeafter,
 	center title,
 	valign=top, halign=left}}
 \begin{center}
-\begin{tcolorbox}[roadmapBox,
-	title=\textbf{\textsc{Funding the project: XPX PreSale and RIPA TEC (WP2)}}]
+	\begin{tcolorbox}[roadmapBox,
+		title=\textbf{\textsc{Funding the project: XPX PreSale and RIPA TEC (WP2)}}]
 
-	This phase recognizes the existence of interest in this market development
-	from across the World concerning the lowering of the entry level for building a cryptocurrency exchange.
-	It aims to make the first comprehensive analysis of this state of the art to form the basis of the later project phases and
-	build the first working prototype of a centralized exchange based on Peatio.\\
-	\vspace{1cm}
-	\centering\textbf{\textsc{Phase ending December 2018}}.
-\end{tcolorbox}
+		This phase recognizes the existence of interest in this market development
+		from across the World concerning the lowering of the entry level for building a cryptocurrency exchange.
+		It aims to make the first comprehensive analysis of this state of the art to form the basis of the later project phases and
+		build the first working prototype of a centralized exchange based on Peatio.\\
+		\vspace{1cm}
+		\centering\textbf{\textsc{Phase ending December 2018}}.
+	\end{tcolorbox}
+	\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+	\begin{tcolorbox}[roadmapBox,
+		title=\textbf{\textsc{First exchange opening and development of tools and resources (WP3)}}]
 
-\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+		The second phase takes the results of the first 
+		and develops from them a set of tools and resources which provide concise and comprehensible guidance to market actors in any
+		Country. With the first instance of Ripa Exchange running first contacts with other economical players in the industry can be
+		done.\\
+		\vspace{1cm}
+		\centering\textbf{\textsc{Phase ending June 2019}}.
+	\end{tcolorbox}
+	\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+	\begin{tcolorbox}[roadmapBox,
+		title=\textbf{\textsc{Dissemination (WP 7/8) and Project Coordination (WP1)}}]
 
-\begin{tcolorbox}[roadmapBox,
-	title=\textbf{\textsc{First exchange opening and development of tools and resources (WP3)}}]
+		During the full duration of the project, 
+		dissemination activities (WP 7/8) are carried out in which results from the individual work packages are disseminated 
+		to relevant target groups including project partners, RipaEx supporters, exchanges managers, banking partners as well 
+		as relevant target groups. This phase covers a wide range of dissemination techniques, from printed and
+		electronic handbooks to workshops and training sessions, ongoing networks, all having the
+		ultimate goal of defining a standard for exchanges communication among public and private entities. 
+		An overarching work package is concerned with the management of the project from start to finish, ensuring proper coordination, 
+		quality assurance and budgetary control (WP1).
+	\end{tcolorbox}
+	\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+	\begin{tcolorbox}[roadmapBox,
+		title=\textbf{\textsc{Development of hybrid-decentralized exchange (WP 4-6)}}]
 
-	The second phase takes the results of the first 
-	and develops from them a set of tools and resources which provide concise and comprehensible guidance to market actors in any
-	Country. With the first instance of Ripa Exchange running first contacts with other economical players in the industry can be
-	done.\\
-	\vspace{1cm}
-	\centering\textbf{\textsc{Phase ending June 2019}}.
-\end{tcolorbox}
-
-\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
-
-\begin{tcolorbox}[roadmapBox,
-	title=\textbf{\textsc{Dissemination (WP 7/8) and Project Coordination (WP1)}}]
-
-	During the full duration of the project, 
-	dissemination activities (WP 7/8) are carried out in which results from the individual work packages are disseminated 
-	to relevant target groups including project partners, RipaEx supporters, exchanges managers, banking partners as well 
-	as relevant target groups. This phase covers a wide range of dissemination techniques, from printed and
-    electronic handbooks to workshops and training sessions, ongoing networks, all having the
-	ultimate goal of defining a standard for exchanges communication among public and private entities. 
-	An overarching work package is concerned with the management of the project from start to finish, ensuring proper coordination, 
-	quality assurance and budgetary control (WP1).
-\end{tcolorbox}
-
-\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
-
-\begin{tcolorbox}[roadmapBox,
-	title=\textbf{\textsc{Development of hybrid-decentralized exchange (WP 4-6)}}]
-
-	Using the tools and resources developed in WP3, 
-	Work packages 4-6 focus on bringing collected knowledge and tools into practice. The three work packages reflect three major
-	focal points (and target groups) within the network of exchange created for establishing successful 
-	demonstrations on local scale: incorporations of local Ripa Exchanges (WP4), technical analysis for the 
-	Ripa Liquidity Service Provider (WP5), and first MVP of the hybrid decentralized exchange (WP6). The demonstration
-    phase forms the heart of the RipaEx action; WP 2 and 3 are focused on providing
-	deliverables (e.g. tools) that enable successful and efficient demonstration activities.\\
-	\vspace{1cm}
-	\centering\textbf{\textsc{Phase ending January 2021}}.
-\end{tcolorbox}
+		Using the tools and resources developed in WP3, 
+		Work packages 4-6 focus on bringing collected knowledge and tools into practice. The three work packages reflect three major
+		focal points (and target groups) within the network of exchange created for establishing successful 
+		demonstrations on local scale: incorporations of local Ripa Exchanges (WP4), technical analysis for the 
+		Ripa Liquidity Service Provider (WP5), and first MVP of the hybrid decentralized exchange (WP6). The demonstration
+		phase forms the heart of the RipaEx action; WP 2 and 3 are focused on providing
+		deliverables (e.g. tools) that enable successful and efficient demonstration activities.\\
+		\vspace{1cm}
+		\centering\textbf{\textsc{Phase ending January 2021}}.
+	\end{tcolorbox}
 \end{center}
 
 \section{RipaEx Partners - RipaEx Governance}\index{RipaEx Partners - RipaEx Governance}
@@ -458,10 +452,10 @@ hybrid-decentralized exchange where all exchanges in the Ripa network will share
 Help is greatly appreciated, feel free to submit pull-requests or open issues.
 
 \section{Features}
-A free, transparent and internationalized open source crypto currency exchange.\\
+A free, transparent and internationalized open source crypto currency exchange.
 
 \tcbset{featureBox/.style={colback=yellow!10!white,colframe=white!20!black,
-equal height group=nobefaf,width=(\linewidth-1pt)/3, height=4.5cm, nobeforeafter,
+equal height group=nobefaf,width=(\linewidth-1pt)/3, height=5.0cm, nobeforeafter,
 	center title,
 	valign=top, halign=left}}
 \begin{tcolorbox}[featureBox,
@@ -558,7 +552,7 @@ some screenshot of the current exchange interface design.
 
 \subsection{End-User Interface}
 Following some screenshot of the end-user Ripa Exchange-Peatio interface: 
-\textcolor{darkred}{those screenshots are a work in progress and they may not represents the user interface of the final product}\\
+\textcolor{darkred}{those screenshots are a work in progress and they may not represents the user interface of the final product}
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_TradingUIC}
 	\captionof{figure}{Ripa Exchange trading UI}
@@ -570,7 +564,7 @@ Following some screenshot of the end-user Ripa Exchange-Peatio interface:
 
 \subsection{Admin Interface}
 Following some screenshot of the administrative console of Ripa Exchange-Peatio interface: 
-\textcolor{darkred}{those screenshots are a work in progress and they may not rapresents the user interface of the final product}\\
+\textcolor{darkred}{those screenshots are a work in progress and they may not rapresents the user interface of the final product}
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDashboardC}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDepositsC}
@@ -971,7 +965,7 @@ where the row ``for project development'' funds allocation is described in table
 \chapter{Business Model}
 
 \section{Project Milestones}
-Following the matrix of development per area of interest based on the funds collected during the phases of PreSale and RIPA TEC:\\
+Following the matrix of development per area of interest based on the funds collected during the phases of PreSale and RIPA TEC:
 \begin{tcbraster}[raster columns=5,raster rows=1,raster height=0.8cm,
 	valign=center, halign=center,
 	enhanced,size=small,sharp corners,colframe=azure(colorwheel),coltext=white,
@@ -1536,37 +1530,15 @@ To be part of our active community or learn more about what we do:
 		\end{enumerate}		
 	}
 \end{scriptsize}
+
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
-
 \chapterimage{chapter_head_9_Milan.jpg} % Chapter heading image
-
 \addcontentsline{toc}{chapter}{\textcolor{trolleygrey}{References}}
 \nocite{*}
 \printbibliography[title={References}]
 %------------------------------------------------
-
-
-%----------------------------------------------------------------------------------------
-%	COPYRIGHT PAGE
-%----------------------------------------------------------------------------------------
-
 \newpage
 ~\vfill
-\thispagestyle{empty}
-
-\noindent Copyright \copyright\ 2018 Ripa Founder Team\\ % Copyright notice
-
-\noindent \textsc{Published by Ripa Founder Team}\\ % Publisher
-
-\noindent \textsc{www.ripaex.io}\\ % URL
-
-\noindent Licensed under the MIT License (the ``License''). You may not use this file except in compliance with the License. 
-You may obtain a copy of the License at \url{https://opensource.org/licenses/MIT}. Unless required by applicable law or agreed to in writing, 
-software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, 
-either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
-
-\noindent \textit{First printing, March 2018} % Printing/edition date
-
 \end{document}

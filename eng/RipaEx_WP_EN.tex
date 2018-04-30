@@ -272,18 +272,18 @@ Governance for the network of exchanges created, development of the source code,
 
 \section{Project Summary}
 \begin{enumerate}
-	\item \textsc{what}: RipaEx is a project to facilitate the uptake of standards to share liquidity between crypto assets marketplaces. 
+	\item \textbf{\textsc{what}}: RipaEx is a project to facilitate the uptake of standards to share liquidity between crypto assets marketplaces. 
 	The objective of RipaEx is the promotion of shared source code for wallets and exchanges in the virtual currency industry: 
 	It is the aim of this reference document to give in-depth information to prospective exchange developers,
 	or exchange managers, to enable correct decision-making and to ensure success for their proposed projects. 
 	It seeks to analyze the real potential in the Country of application for a network of cryptocurrency exchanges, 
 	and its place in the market.
-	\item \textsc{what}: Crypto assets are an alternative to centralized assets managed by (country-specific) stock exchanges. Although certain
+	\item \textbf{\textsc{what}}: Crypto assets are an alternative to centralized assets managed by (country-specific) stock exchanges. Although certain
 	stock exchanges gives the possibility to their users to verify and manage the assets they own the verification process
 	is not always transparent that is the reason because from 2009 \cite{bitcoin} onwards a new types of (community-verifiable) assets 
 	have been implemented to give small, medium and big investors complete transparency in the managing of their investments
 	assets.
-	\item \textsc{when}: Recent developments at European Union level and worldwide are transforming both how virtual currencies
+	\item \textbf{\textsc{when}}: Recent developments at European Union level and worldwide are transforming both how virtual currencies
 	are treated and the way ICO (Initial Coin Offering) are legislated. These combined developments 
 	have made the use and production of virtual currencies an increasingly favorable prospect. \\
 	In October 2015 the European Court of Justice ruled that bitcoin and other cryptocurrencies are exempt from VAT taxation. \\
@@ -291,42 +291,63 @@ Governance for the network of exchanges created, development of the source code,
 	will bring virtual currencies exchanged and wallet providers into the EU's anti-money laundering framework \cite{EUAMLCrypto}.\\
 	In February 2018 the European Commission launched the EU Blockchain Observatory and Forum \cite{EUBOaF} to highlight key developments 
 	of the blockchain technology, promote European actors and reinforce European engagement with multiple stakeholders involved in blockchain activities.
-	\item \textsc{why}: However there is still very little regulation performed on ICOs and only United States of America at the moment has undergone
+	\item \textbf{\textsc{why}}: However there is still very little regulation performed on ICOs and only United States of America at the moment has undergone
 	a legislation defining ICO tokens as securities. \cite{SECICO}
-	\item \textsc{who}: The results indicate that medium tech savvy from 18 to 45 is the average user of
+	\item \textbf{\textsc{who}}: The results indicate that medium tech savvy from 18 to 45 is the average user of
 	virtual currencies although the corporate finance companies are also starting to put 
 	virtual currencies schemes inside their portfolio especially since the presentation 
 	of the bitcoin futures contract from CME Group Inc. in the stock exchange of Chicago
 	last 18th of December 2017.
-	\item \textsc{how much}: Total virtual currencies market capitalization has been estimated around 317 B USD\footnote{Coinmarketcap data April 2018}
+	\item \textbf{\textsc{how much}}: Total virtual currencies market capitalization has been estimated around 317 B USD\footnote{Coinmarketcap data April 2018}
 	and is predicted to grow to 5,000.00 B USD in the next ten years span \cite{cryptoMCTenYears}.
-	\item \textsc{where}: Local authorities are working with National Governments to make sure local exchangers
+	\item \textbf{\textsc{where}}: Local authorities are working with National Governments to make sure local exchangers
 	in the national territory are complying with national and international AML/KYC regulations.
 	Venture capitals and Angel Investors are starting to release financing solutions to start-ups 
 	in the Fintech industry all over the world from America to Asia passing through Europe and some 
 	Countries are starting state-owned cryptocurrencies schemes to test the exchange of goods \& services
 	on those (distributed ledger) technologies \cite{petro}.
-	\item \textsc{how much}: The average cost for starting your own crypto asses marketplace is around \$ 150,000.00 only for a running instance of your exchange platform:
+	\item \textbf{\textsc{how much}}: The average cost for starting your own crypto asses marketplace is around \$ 150,000.00 only for a running instance of your exchange platform:
 	to that you need to add costs to customize the platform before launch and in the future, advertising your new business, running costs for servers,
 	network operators, support center operators and legal department to comply with your State of incorporation AML/KYC legislations and general company laws.\\
 	\textbf{That is the reason because we think owning the source code of your exchange software is the best way to run a business in this industry}.
-	\item \textsc{how}: The main problems encountered in opening a FIAT $\Leftrightarrow$ CRYPTO marketplace is to find trusted
+	\item \textbf{\textsc{how}}: The main problems encountered in opening a FIAT $\Leftrightarrow$ CRYPTO marketplace is to find trusted
 	banking partners to comply with the many different AML/KYC rule and procedures to exchange virtual currencies
 	to FIAT currencies.
-	\item \textsc{what}: Classical types of exchanges operations are: 
-		\begin{enumerate}[label*=\arabic*.]
-			\item \textbf{one-way exchanges}: in which a centralized application has all the liquidity to offer to its potential users
-			\item \textbf{two-way exchanges}: in which a centralized or decentralized platform match the selling requests with the buying requests
+	\item \textbf{\textsc{what}}: Classical types of exchange operations are: 
+		\begin{itemize}
+			\item \textbf{one-way exchange}: in which a centralized application has all the liquidity to offer to its potential users
+			\item \textbf{two-way exchange}: in which a centralized or decentralized platform match the selling requests with the buying requests
 			of its users
-		\end{enumerate}
+		\end{itemize}
 		On this a sub-classification is also necessary:
-		\begin{enumerate}[label*=\arabic*.]
-			\item \textbf{FIAT $\Leftrightarrow$ CRYPTO exchanges}: in which exchanges operations are performed between FIAT\footnote{Traditional central banks owned currencies like EUR, USD, GBP, JPY, others...} 
+		\begin{itemize}
+			\item \textbf{FIAT $\Leftrightarrow$ CRYPTO exchange}: in which exchanges operations are performed between FIAT\footnote{Traditional central banks owned currencies like EUR, USD, GBP, JPY, others...} 
 			currencies and virtual currencies
-			\item \textbf{CRYPTO $\Leftrightarrow$ CRYPTO exchanges}: in which exchanges operations are performed only between virtual currencies
-		\end{enumerate}
+			\item \textbf{CRYPTO $\Leftrightarrow$ CRYPTO exchange}: in which exchanges operations are performed only between virtual currencies
+		\end{itemize}
 	You can build a matrix based on the four configurations above to build the exchange operation platform of your needs.
-	\item \textsc{with what}: The specifications to look when choosing for an exchange platform to run are:
+	\begin{tcbraster}[raster columns=3,raster rows=1,raster height=0.8cm,
+		valign=center, halign=center,
+		enhanced,size=small,sharp corners,colframe=azure(colorwheel),coltext=white,
+		colback=azure(colorwheel),fit algorithm=hybrid* ]
+		\tcboxfit{}
+		\tcboxfit{\textbf{one-way}}
+		\tcboxfit{\textbf{two-way}}
+	\end{tcbraster}
+	\begin{tcbraster}[raster columns=3,raster rows=2,raster height=5cm,
+		valign=center, halign=center,
+		enhanced,size=small,sharp corners,colframe=silver,coltext=black,
+		colback=silver,fit algorithm=hybrid* ]
+		\tcboxfit{\textsc{\textbf{FIAT $\Leftrightarrow$ CRYPTO}}}
+		\tcboxfit{\tcbfontsize{0.8} fast application to buy cryptocurrency}
+		\tcboxfit{\tcbfontsize{0.8} exchange with banking partnership}
+	
+		\tcboxfit{\textsc{\textbf{CRYPTO $\Leftrightarrow$ CRYPTO}}}
+		\tcboxfit{\tcbfontsize{0.8} fast application to buy cryptocurrency}
+		\tcboxfit{\tcbfontsize{0.8} exchange without banking partnership}
+	\end{tcbraster}	
+
+	\item \textbf{\textsc{with what}}: The specifications to look when choosing for an exchange platform to run are:
 		\begin{enumerate}[label*=\arabic*.]
 			\item \textbf{code}: Open Source, Closed Source or hybrid solution
 			\item \textbf{modularization}: separation between exchange engine (orders matching engine), UI and user registry
@@ -342,11 +363,11 @@ Governance for the network of exchanges created, development of the source code,
 	\textbf{Those are not only technical decisions to be made but also economical} especially the owning of the source code of your crypto asset
 	marketplace platform is fundamental to make future customization of your exchange in an independent way compared to rely on a single
 	software house that makes the customizations for you.
-	\item \textsc{how}: Options for finding users for your exchanges operations are: targeted marketing campaigns, innovative features in the industry,
+	\item \textbf{\textsc{how}}: Options for finding users for your exchanges operations are: targeted marketing campaigns, innovative features in the industry,
 	fee level based on trading quantities, bonuses for first registration and trading quantities, affiliate marketing for paying users to take their friends
 	to your exchange.
-	\item \textsc{how}: For setting-up a crypto asset marketplace a project must take into account the following legislation:
-		\begin{enumerate}[label*=\arabic*.]
+	\item \textbf{\textsc{how}}: For setting-up a crypto asset marketplace a project must take into account the following legislation:
+		\begin{itemize}
 			\item \textbf{AML/KYC}: \textit{Fourth Anti-Money Laundering Directive} if business set up in the European Union \cite{4AMLD} or the AML/KYC reference implementation
 			to your crypto asset marketplace Country of incorporation (as an example \textit{Intelligence Reform \& Terrorism Prevention Act of 2004}
 			written by FinCEN in the United States of America).\\
@@ -355,8 +376,8 @@ Governance for the network of exchanges created, development of the source code,
 			FIAT $\Leftrightarrow$ CRYPTO exchanges operations is obtaining a \textit{PSD Licence} \cite{PSD}. 
 			The PSD license follows Council Directive 2007/64/EC and is applied in each country via its own national laws. 
 			Costs of an PSD license can vary between \euro XXXX and \euro XXXX, depending on the exchange volume.
-		\end{enumerate}
-	\item \textsc{who}: The nature of the business under consideration by the Ripa Exchange project (small scale,
+		\end{itemize}
+	\item \textbf{\textsc{who}}: The nature of the business under consideration by the Ripa Exchange project (small scale,
 	localized FIAT $\Leftrightarrow$ CRYPTO exchanges operations), means that each enterprise likely to have 7 or 8 staff: N.2 developers, 
 	N.1 network/security operator, N.1 administrative, N.2 client support operators, N.1 legal and tax advisor. \\
 	The turnover of such an enterprise however, because of the high value of the end product, is likely to be more than 
@@ -365,24 +386,24 @@ Governance for the network of exchanges created, development of the source code,
 	A limited company; A non-profit company or social enterprise; A worker co-operative.
 	Financial Agencies are potential key actors, but the type of business they can set up will
 	depend on their legal status which does vary from country to country.
-	\item \textsc{how}: Potential sources of funds for a small-medium sized crypto asset marketplaces are: Bank Loans; Low
+	\item \textbf{\textsc{how}}: Potential sources of funds for a small-medium sized crypto asset marketplaces are: Bank Loans; Low
 	Interest Loan Schemes; Commercial Credit; Equity financing; Business Angels venture
 	capital. Having a robust Business Plan and financial guarantees are essential elements
 	for securing funding. The European Investment Fund (EIF) of the EIB, offers support in
 	the form of guarantees for SMEs.
-	\item \textsc{why}: The arguments for crypto asset marketplaces are for financial freedom, decentralizing of the value-transferring operations, and
+	\item \textbf{\textsc{why}}: The arguments for crypto asset marketplaces are for financial freedom, decentralizing of the value-transferring operations, and
 	owning for real your money. 
 	There are other benefits, well documented, such as faster payments, long term gain based on deflationary economy and prediction of 
 	Great Depressions like the one that hit the global economy in 2008. But
 	above all, virtual currencies are the only direct competitor to centralized value-transferring operations done by central banks.
 
-	\item \textsc{why}: There is consensus in the literature that the use of virtual currencies in place of fiat currencies will result in 
+	\item \textbf{\textsc{why}}: There is consensus in the literature that the use of virtual currencies in place of fiat currencies will result in 
 	higher financial freedom especially as they fit into the Austrian school of economy \cite{austrianTheory} 
 	(TODO: add more on Austrian economics school)
 
-	\item \textsc{why}: Benefits of virtual currencies schemes (TODO: put some numbers)
+	\item \textbf{\textsc{why}}: Benefits of virtual currencies schemes (TODO: put some numbers)
 
-	\item \textsc{how}: Securing assets on the blockchains means basically performing three operations
+	\item \textbf{\textsc{how}}: Securing assets on the blockchains means basically performing three operations
 		\begin{enumerate}[label*=\arabic*.]
 			\item \textbf{Generating a random private key}
 			\item \textbf{Converting the private key generated in (1) into a public key}: a common protocol making this conversion
@@ -392,34 +413,34 @@ Governance for the network of exchanges created, development of the source code,
 		\end{enumerate}
 	At this point any value sent to the virtual currency address generated in (3) is secured on the blockchain of choice and accessible
 	only from the owner of the relative private key generated in (1).
-	\item \textsc{where}: The two critical factors affecting the cryptocurrency industry are banks concurrence and State banning.
+	\item \textbf{\textsc{where}}: The two critical factors affecting the cryptocurrency industry are banks concurrence and State banning.
 	Although a harmonization throughout Europe would be beneficial to development of the industry both in terms of 
 	taxation and warranty approvals, this is currently not the case. Each country has its specific legislation and tax
 	regime for all exchanges operations involving FIAT money, and State banning is going to completely liberalization 
 	of this activities like European Union to complete banning and imprisonment of operators in this industry like Bangladesh
 	\cite{bitcoinLegality}. 
 
-	\item \textsc{where}: The Asiatic countries of South Korea, China and Japan are the leader in the field of cryptocurrencies for number of 
+	\item \textbf{\textsc{where}}: The Asiatic countries of South Korea, China and Japan are the leader in the field of cryptocurrencies for number of 
 	transactions for over 9 years with a proactive approach and favorable tax regime. At the beginning of 2017 in Japan bitcoin
 	has been declared legal tender but China has recently declared illegal token sale and exchanges and local cryptocurrencies
 	marketplaces are closing down.
-	\item \textsc{where}: Any assessment of your local market should include: number of potential users to reach, 
+	\item \textbf{\textsc{where}}: Any assessment of your local market should include: number of potential users to reach, 
 	type of exchange to incorporate (FIAT $\Leftrightarrow$ CRYPTO or CRYPTO $\Leftrightarrow$ CRYPTO), type of virtual currencies protocol 
 	to integrate (POW, DPOS, Masternodes, others...), types of services to offer (exchange only, advanced trading tools,
 	payment processor, others...), if FIAT $\Leftrightarrow$ CRYPTO exchange number of FIAT payments processors to accept (PayPal, OKPay,
 	MoneyPolo, others...), number of others exchanges in your region.
 
-	\item \textsc{who}: there are a number of options for dealing with Warranty/Customer protection issues: 
+	\item \textbf{\textsc{who}}: there are a number of options for dealing with Warranty/Customer protection issues: 
 	creating consumer pressure by making clear to the end users that the possession of the private keys of their
 	virtual currency addresses make \textbf{liable} for any loss of the private keys meaning nobody can help
 	them recovering their funds if the their private keys are lost. Creating consumer pressure to not leave funds
 	on exchanges (``\textit{Be Your own Bank!!}''), making them choose the licensed exchanges in the market. 
-	\item \textsc{who}: While it is very expensive to insure money exchanges operations and money transmitting operations, 
+	\item \textbf{\textsc{who}}: While it is very expensive to insure money exchanges operations and money transmitting operations, 
 	examples of customer protections in the industry are: Kraken platform which is offering Mt. Gox users partial refund
 	of their lost, NEO community giving refund to the users involved in the BitGrail hacking, Ethereum supporters
 	giving The DAO investors partial refunds, other hacking cases...
 
-	\item \textsc{Recommendations for all/law compliance}: if you intend to incorporate a FIAT $\Leftrightarrow$ CRYPTO exchange you should
+	\item \textbf{\textsc{Recommendations for all/law compliance}}: if you intend to incorporate a FIAT $\Leftrightarrow$ CRYPTO exchange you should
 	focus from the first instance on law compliance by studying the AML/KYC laws of the country of incorporation and
 	finding bank partners to work with. Local financial Authority can help to comply with rules \& regulations and 
 	local cryptocurrencies foundations can help you to tune your exchanges operations to perform targeted
@@ -557,9 +578,11 @@ Following some screenshot of the end-user Ripa Exchange-Peatio interface:
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_TradingUIC}
 	\captionof{figure}{Ripa Exchange trading UI}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_depositBTCC}
+	\captionof{figure}{Ripa Exchange deposit/whitdraw}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_historyC}
+	\captionof{figure}{Ripa Exchange order history}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_solvencyC}
-	\captionof{figure}{Ripa Exchange deposit/whitdraw, order history and solvency screen}
+	\captionof{figure}{Ripa Exchange solvency screen}
 \end{center}
 
 \subsection{Admin Interface}
@@ -567,12 +590,15 @@ Following some screenshot of the administrative console of Ripa Exchange-Peatio 
 \textcolor{darkred}{those screenshots are a work in progress and they may not rapresents the user interface of the final product}
 \begin{center}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDashboardC}
+	\captionof{figure}{Ripa Exchange Admin console dashboard}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminDepositsC}
+	\captionof{figure}{Ripa Exchange Admin console deposit screen}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminWithdrawsC}
-	\captionof{figure}{Ripa Exchange Admin console dashboard, deposit/whitdraw screen}
+	\captionof{figure}{Ripa Exchange Admin console whitdraw screen}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminUserInfo1C}
+	\captionof{figure}{Ripa Exchange Admin user info screen}
 	\includegraphics[width=\textwidth*2/3,height=\textheight,keepaspectratio]{RE_adminVerifyAccountC}
-	\captionof{figure}{Ripa Exchange Admin user info and verify account screen}
+	\captionof{figure}{Ripa Exchange Admin verify account screen}
 \end{center}
 
 \section{Features at Launch}
@@ -1542,7 +1568,7 @@ To be part of our active community or learn more about what we do:
 \newpage
 ~\vfill
 \thispagestyle{empty}
-\begin{center}
-	\noindent Page left intentionally blank
-\end{center}
+%\begin{center}
+%	\noindent Page intentionally left blank
+%\end{center}
 \end{document}

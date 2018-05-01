@@ -488,7 +488,7 @@ un exchange ibrido-decentralizzato dove tutti gli exchange nella rete Ripa condi
 Il supporto tecnico è sempre apprezato: sentitevi liberi di inoltrare pull-request oppure aprire issue nei nostri repository GitHub.
 
 \section{Funzionalità}
-Un libero, trasparente ed internazionalizzato exchange di cryptomonete open source.
+Un libero, trasparente ed internazionalizzato exchange di criptomonete open source.
 
 \tcbset{featureBox/.style={colback=yellow!10!white,colframe=white!20!black,
 equal height group=nobefaf,width=(\linewidth-1pt)/3, height=5.0cm, nobeforeafter,
@@ -498,7 +498,7 @@ equal height group=nobefaf,width=(\linewidth-1pt)/3, height=5.0cm, nobeforeafter
 	title=\textsc{Open Source} \faCircleONotch]
 
 	\small	Tutto il codice sorgente prodotto è rilasciato sotto licenza MIT.\\\vspace{5mm}
-	\tiny Ripa Exchange è un'architettura di cambia valuta virtuale personalizzabile che connette semplicemente procedure
+	\tiny Ripa Exchange è un'architettura di cambiavaluta virtuale personalizzabile che connette semplicemente procedure
 	di autentificazione AML/KYC, report ETL ed altri servizi.
 \end{tcolorbox}
 \begin{tcolorbox}[featureBox,
@@ -621,37 +621,37 @@ Di seguito alcuni screenshot dell'interfaccia utente dell'area amministrativa de
 \end{center}
 
 \section{Funzionalità al Lancio}
-\todo{TODO: scrivere più in dettaglio questa parte}
+All'apertura della prima istanza di Ripa Exchange le seguenti funzionalità sono previste:
 \begin{itemize}
-	\item \textsc{\textsc{CRYPTO $\Leftrightarrow$ CRYPTO}}:
+	\item \textsc{\textsc{CRYPTO $\Leftrightarrow$ CRYPTO}}: exchange di cambio valuta virtuale in valuta virtuale
 	\item \textsc{\textsc{OAuth}}: Facebook, Google, Twitter
 	\item \textsc{\textsc{FIDO}}: login con standard FIDO Alliance
-	\item \textsc{\textsc{Protocolli}}: POW, DPOS, Masternode, tether, ERC20
-	\item \textsc{\textsc{Valute}}: BTC, ETH, DOGE, BCH, TUSD, ARK, LISK, SHIFT, RISE, KAPU, OXY, RIPA, promising ERC20 tokens
+	\item \textsc{\textsc{Protocolli}}: POW, DPOS, Masternode, tether, ERC20 accettati dall'exchange
+	\item \textsc{\textsc{Valute}}: BTC, ETH, DOGE, BCH, TUSD, ARK, LISK, SHIFT, RISE, KAPU, OXY, RIPA, token ERC20 promettenti, 
+	ed altre valute nella sezione protocolli non citate qui
 	\item \textsc{\textsc{Mercati Principali}}: BTC, ETH, ARK
 	\item \textsc{\textsc{Tipo di Ordini}}: market, limit
 \end{itemize}
 
 \subsection{Funzionalità Future}
-\todo{TODO: scrivere più in dettaglio questa parte}
+Le future istanze di Ripa Exchange implementeranno le seguenti funzionalità:
 \begin{itemize}
 	\item \textsc{\textsc{E-Wallets}}: OKPay, NETELLER, MoneyPolo, others...
 	\item \textsc{\textsc{Funzionalità di Trading Avanzate}}: margin trading, stop loss and take profit, 
-	\item \textsc{\textsc{FIAT $\Leftrightarrow$ CRYPTO}}
+	\item \textsc{\textsc{FIAT $\Leftrightarrow$ CRYPTO}}: depositi/prelievi tramite bonifico bancario
 	\item \textsc{\textsc{Altre funzionalità}}: VISA/MasterCard, merchants tools, P2P Lending 
 \end{itemize}
-
 
 \section{Verso un Exchange Decentralizzato...}
 Ripa Exchange è un exchange centralizzato che sarà convertito in un ibrido-decentralizzato per creare una rete di exchange
 che condividono lo stesso codice sorgente e la stessa liquidità in modo tale che tu possa offrire liquitià ai tuoi clienti 
 già dal giorno 1 di apertura degli scambi finanziari.\\
 
-Per offrire i PRO di un exchange centralizzato (supporto di livello platinum, scambio FIAT) e di un exchange decentralizzato
-(liquidità) senza i CONTRO di entrambi, dovremo eseguire questa passaggio con lo step intermedio di un exchange 
+Per offrire i PRO di un exchange centralizzato come supporto di livello platinum e scambio FIAT, ed i PRO di un exchange 
+decentralizzato come la liquidità, senza i CONTRO di entrambi, dovremo eseguire questa passaggio con lo step intermedio di un exchange 
 ibrido-decentralizzato e durante la fase 3 del progetto RipaEx (WP 4-6) esguiremo tutte le analisi funzionali e tecniche 
-richieste per costruire il prossimo passo su fondamenta solide. 
-\todo{TODO: scrivere più in dettaglio questa parte}
+richieste per costruire il prossimo passo su fondamenta solide ed offrire alla comunità RipaEx un exchange open source, sicuro
+ed efficiente.
 
 %----------------------------------------------------------------------------------------
 %	PART
@@ -678,14 +678,15 @@ con il proprio token \PHP (simbolo XPX) scambiato su di essa che servirà a svol
 
 Il token \PHP o XPX è una criptovaluta derivata da ARK, Lisk, Crypti e BitShares con differenze uniche e miglioramenti per 
 raggiungere l'obbiettivo di condividere liquidità tra tutti gli exchange della rete Ripa. Tuttavia questo codice eredita
-le transazioni semplificate tra le blockchain basate su ARK ed il consenso DPOS. Questo codice sorgente omogeneo 
-permette lo sviluppo di potenziali servizi intra-blockchain nella forma di app ARK ed assieme ad altri sistemi addizionali
+le transazioni semplificate tra le blockchain basate su ARK ed il protocollo di consenso DPOS. Questo codice sorgente omogeneo 
+permette lo sviluppo di potenziali servizi inter-blockchain nella forma di app ARK ed assieme ad altri sistemi addizionali
 forniti dagli amministratori delle blockchain rispettive.
 
 \vspace{5mm}
 \textsc{\textbf{La blockchain Ripa è un fork di ARK e la creazione di tale blockchain serve per completare l'ecosistema Ripa
-permettendo ogni exchange nella rete Ripa di condividere la stessa liquidità. Noi ci fideremo sempre di ARK come nostro
-fornitore di tecnologia blockchain per mergiare il loro codice nel nostro per tutto ciò che riguarda la blockchain Ripa}}
+permettendo ogni exchange nella rete Ripa di condividere la stessa liquidità. Noi ci affideremo sempre ad ARK come nostro
+fornitore di tecnologia blockchain di fiducia per includere il loro codice nei nostri repositori
+per tutto ciò che riguarda la blockchain Ripa}}
 
 \vspace{5mm}
 
@@ -729,15 +730,15 @@ Le specifiche tecniche di Ripa Blockchain sono le seguenti:
 		\end{itemize}
 	\end{itemize}
 	\item Tabelle di routing
-	\item Campo SmartBridge per uso con blockchain connesse alla blockchain ARK principale (ARK Contract Execution Service)
+	\item Campo SmartBridge per uso con blockchain connesse alla blockchain RIPA principale (ARK Contract Execution Service)
 	\item Transazioni batch\footnote{Aggiornamento futuro: quando ARK 2.0 sarà rilasciata \label{note1}}
 	\item Fee di transazione personalizzabili\footnotemark[\value{footnote}]
 	\item SmartContract nativi\footnote{Aggiornamento futuro: quando ARK Virtual Machine sarà rilasciata}
 \end{enumerate}
 
 \vspace{5mm}
-\textsc{\textbf{Come detto Ripa Blockchain è un fork di ARK e noi ci fideremo sempre di ARK come nostro provider di tecnologia 
-di fiducia per mergiare il loro codice nelle nostre ultime funzionalità per tutto ciò che concerne lo sviluppo di 
+\textsc{\textbf{Come detto Ripa Blockchain è un fork di ARK e noi ci affideremo sempre ad ARK come nostro provider di tecnologia 
+di fiducia per includere il loro codice nelle nostre ultime funzionalità per tutto ciò che concerne lo sviluppo di 
 Ripa Blockchain}}, funzionalità quali:
 \begin{itemize}
 	\item \textbf{Scalabilità della rete} al livello delle reti di Carte di Credito più diffuse con aggiornamento del core
@@ -751,7 +752,7 @@ Ripa Blockchain}}, funzionalità quali:
 	\item \textbf{Due tipi di nodi} sono usati per sicurizzare la rete RIPA:
 	\begin{itemize}
 		\item \textbf{Nodi di trasmissione} - Nodi con funzionalità di API che servono come back-end per servizi terzi
-		(es: lite clients). I nodi di trasmissione non forgiano blocchi e non quadagnano XPX per le transazioni.
+		(es: lite client). I nodi di trasmissione non forgiano blocchi e non quadagnano XPX per le transazioni.
 		\item \textbf{Nodi forgianti} - Nodi con funzionalità API ridotta per abbassare l'esposizione a potenziali
 		attacchi DDoS alla piattaforma RIPA. I nodi forgianti forgiano XPX e ricevono commissioni di transazione.
 	\end{itemize}
@@ -797,9 +798,9 @@ nella transazione. Ad esempio:
 I 101 delegati forgianti con il numero di voti maggiore sono elegibili per forgiare blocchi
 RIPA. Questa progettazione elimina la possibilità che un singolo grande possessore di
 RIPA oppure un'organizzazione che detiene una larga percentuale di RIPA siano in grado
-di prendere il controllo della rete nella sua interessa mediante il voto dei loro nodi
-ponendoli in posizione di nodi forgianti, prendendo, effettivamente controllo dell'
-intera rete. I voti provenienti dai token RIPA in possesso del Ripa Founder Team
+di prendere il controllo della rete nella sua interezza mediante il voto dei loro nodi
+ponendoli in posizione di nodi forgianti, prendendo, effettivamente controllo dell'intera rete. 
+I voti provenienti dai token RIPA in possesso del Ripa Founder Team
 possono essere usati a sola discrezione del team Ripa.
 
 \section{Collegamenti tra Blockchain}
@@ -869,7 +870,7 @@ La vendita di token RipaEx XPX sarà separata in due fasi:
 		\item \textbf{\textsc{RIPA TEC}}: che durerà da Ottobre a Dicembre 2018
 	\end{itemize}
 \vspace{5mm}
-Potete semplicemente riferirvi ad entrambe le fasi di PreSale e RIPA TEC con l'appellativo \textit{RipaEx ICO}.
+Colloquialmente le fasi di PreSale e RIPA TEC possono essere identificate con l'appellativo \textit{RipaEx ICO}.
 
 \subsection{Tasso di Cambio e Criptomonete Accettate}
 Durante la vendita dei token il tasso di cambio per i token XPX sarà di \textbf{\PHP/\euro0.10}.\\
@@ -963,7 +964,7 @@ in figura \ref{fig:distribution} ed in tabella \ref{tab:distribution}.
 \end{table}
 
 \vspace{5mm}
-\textbf{I token non venduti durante le fasi di PreSale e RIPA TEC saranno bruciati} per sempre per permettere
+\textbf{I token non venduti durante le fasi di PreSale e RIPA TEC saranno distrutti} per sempre per permettere
 un'equa distribuzione dei fondi raccolti e per evitare speculazioni sui token rimasti.
 
 \section{Divisione dei Fondi}
@@ -1061,7 +1062,7 @@ PreSale e RIPA TEC:
 
 	\tcboxfit{\textsc{\textbf{Conformità}}}
 	\tcboxfit{\tcbfontsize{0.8} Dipartimento legale al lavoro su standard internazionali AML/KYC}
-	\tcboxfit{\tcbfontsize{0.8} Dipartimente legali al lavoro su standard internazionali AML/KYC a New York,
+	\tcboxfit{\tcbfontsize{0.8} Dipartimenti legali al lavoro su standard internazionali AML/KYC a New York,
 	Londra ed Hong Kong}
 	\tcboxfit{\tcbfontsize{0.8} Cooperazione con Agenzie Governative internazionali}
 	\tcboxfit{\tcbfontsize{0.8} Partnership bancaria per definizione nuovi standard AML/KYC}
@@ -1075,20 +1076,20 @@ PreSale e RIPA TEC:
 
 \section{Visione di Mercato}
 	\subsection{Dimensioni del Mercato delle Cryptovalute e Tecnologia}
-	\todo{TODO: riferimenti in bibliografia}
 		\begin{itemize}
 			\item La capitalizzazione di mercato delle criptovalute è proiettata nel raggiungere picchi di 
-			\href{https://www.ccn.com/cryptocurrency-market-cap-to-reach-2-trillion-in-2018-mike-novogratz/}{\$1.000-2.000 miliardi nel 2018}.
-			\item La capitalizzazione di mercato di bitcoin supera i \href{https://coinmarketcap.com/currencies/bitcoin/historical-data/}{\$70 miliardi}, 
-			con picchi di volume giornaliero di \$3 miliardi al giorno.
+			\href{https://www.ccn.com/cryptocurrency-market-cap-to-reach-2-trillion-in-2018-mike-novogratz/}{\$1.000-2.000 miliardi nel 2018}
+			\cite{novograzPrediction}.
+			\item La capitalizzazione di mercato di bitcoin supera i \href{https://coinmarketcap.com/currencies/bitcoin/historical-data/}{\$70 miliardi}
+			\cite{coinmarketcapHistorical}, con picchi di volume giornaliero di \$3 miliardi al giorno.
 			\item La firma di consulenza tecnologica CB Insights ha identificato \href{https://www.cbinsights.com/blog/industries-disrupted-blockchain/}{27 modi} 
-			in cui la tecnologia blockchain può cambiare le basi dei processi bancari, di sicurezza informatica,
+			\cite{cbinsights} in cui la tecnologia blockchain può cambiare le basi dei processi bancari, di sicurezza informatica,
 			di voto, universitari.
-			\item Il World Economic Forum stima che per il 2017,
-			\href{http://www3.weforum.org/docs/WEF_GAC15_Technological_Tipping_Points_report_2015.pdf}{il 10\% del PIL mondiale} sarà generato
-			dalla tecnologia blockchain.
+			\item Il World Economic Forum stima che per il 2027,
+			\href{http://www3.weforum.org/docs/WEF_GAC15_Technological_Tipping_Points_report_2015.pdf}{il 10\% del PIL mondiale} \cite{wefTTP}
+			sarà generato dalla tecnologia blockchain.
 			\item La maggior parte delle mining pool sono localizzate in Cina, comprendente 
-			\href{https://www.buybitcoinworldwide.com/mining/china/}{più del 70\%}
+			\href{https://www.buybitcoinworldwide.com/mining/china/}{più del 70\%} \cite{bitcoinMiningChina}
 			della potenza di mining totale di Bitcoin. Il business model dei produttori di hardware di mining cinesi si basa sul basso 
 			costo dell'energia nel Paese. 
 		\end{itemize}
@@ -1098,25 +1099,28 @@ PreSale e RIPA TEC:
 		\end{center}
 
 	\subsection{Tipi di Criptovalute}
-	\todo{TODO: riferimenti in bibliografia}
 		\begin{itemize}
 			\item Ci sono al mondo \href{https://coinmarketcap.com/all/views/all/}{più di 1.000 criptovalute} 
-			esistenti al momento (chiamate ``altcoin''); con 600 di queste aventi una capitalizzazione 
-			di mercato superiore a \$100.000.
+			\cite{coinmarketcapAll}	esistenti al momento (chiamate ``altcoin''); 
+			con 600 di queste aventi una capitalizzazione di mercato superiore a \$100.000.
 			\item Mentre il prezzo di bitcoin ha generalmente sempre seguito un trend rialzista, nei primi del 2018, 
 			il prezzo di bitcoin è sceso leggermente,
 			\href{https://www.cnbc.com/2018/02/05/bitcoin-price-drops-below-8000-over-60-billion-wiped-off-cryptocurrencies.html}{raggiungendo un minimo di \$8,000} 
+			\cite{cnbcBitcoinPriceSurge}
 			mentre notizie di regolamentazioni ferree in materia arrivavano dalla Cina e dalla Corea del Sud.
 			Il prezzo del bitcoin è anche sceso a seguito dell'annuncio del
 			\href{http://www.latimes.com/business/la-fi-bitcoin-sec-registration-20180307-story.html}{blocco della SEC} 
+			\cite{laTimes}
 			negli exchange di criptovalute dopo che Binance
-			\href{https://www.ft.com/content/58a32050-22aa-11e8-add1-0e8958b189ea}{ha ammesso di esser stato hackerato}.
+			\href{https://www.ft.com/content/58a32050-22aa-11e8-add1-0e8958b189ea}{ha ammesso di esser stato hackerato}
+			\cite{ftBinanceHack}.
 			\item La quota di mercato di bitcoin è scesa dall'81\% di Giugno 2016 al 41\% di Giugno 2017, tuttavia
 			il prezzo di bitcoin è continuato a salire.
 			\item Nell'Agosto 2017 la capitalizzazione di mercato di ethereum era attorno \$28 miliardi. Ad un certo punto,
-			\href{http://www.zerohedge.com/news/2017-05-31/ethereum-forecast-surpass-bitcoin-2018}{alcuni commentatori}, 
+			\href{http://www.zerohedge.com/news/2017-05-31/ethereum-forecast-surpass-bitcoin-2018}{alcuni commentatori}
+			\cite{zeroHedge}, 
 			anticiparono che ethereum avrebbe superato la capitalizzazione di mercato di bitcoin (il 
-			\href{https://www.flippening.watch/}{``flippening''}). 
+			\href{https://www.flippening.watch/}{``flippening''} \cite{flippening}). 
 			Tuttavia problemi con la tecnologia Ethereum da allora hanno causato il suo prezzo a scendere.
 		\end{itemize}
 		\begin{center}
@@ -1125,22 +1129,26 @@ PreSale e RIPA TEC:
 		\end{center}
 
 	\subsection{Investire in Criptovalute}
-	\todo{TODO: riferimenti in bibliografia}
 		\begin{itemize}
 			\item Domanda ed offerta contano. Il livello di fornitura di bitcoin continuerà a diminuire fino
 			a che bitcoin non raggiunge 21 milioni,
-			\href{https://www.coindesk.com/top-10-bitcoin-myths-debunked/}{evento che dovrebbe accadere nel 2140}. 
+			\href{https://www.coindesk.com/top-10-bitcoin-myths-debunked/}{evento che dovrebbe accadere nel 2140}
+			\cite{mythsDebunked}. 
 			Similarmente la fornitura di litecoin sarà limitata a 
-			\href{https://support.xbtce.info/Knowledgebase/Article/View/152/59/about-litecoin}{84 milioni di untià}.
+			\href{https://support.xbtce.info/Knowledgebase/Article/View/152/59/about-litecoin}{84 milioni di untià}
+			\cite{ltcLimits}.
 			\item Offerte di Valuta Iniziali (Initial Coin Offering) stanno scambiando al momento. Quest'anno
 			il CEO di Mozilla Brendon Eich ha raccolto \$35 milioni in una ICO 
-			\href{https://techcrunch.com/2017/06/01/brave-ico-35-million-30-seconds-brendan-eich/}{in meno di 30 secondi}, 
+			\href{https://techcrunch.com/2017/06/01/brave-ico-35-million-30-seconds-brendan-eich/}{in meno di 30 secondi}
+			\cite{techCrunch}, 
 			e Bancor Protocol ha raccolto \$153 milioni in	 
-			\href{https://www.google.com/search?q=Bancor+Protoco+ico&oq=Bancor+Protoco+ico&gs_l=psy-ab.3..0i13k1l2.253.542.0.578.4.3.0.0.0.0.177.320.0j2.2.0....0...1.1.64.psy-ab..3.1.176.LOjRpj0hKrM}{meno di tre ore}.
+			\href{https://www.google.com/search?q=Bancor+Protoco+ico&oq=Bancor+Protocol+ico&gs_l=psy-ab.3..0i13k1l2.253.542.0.578.4.3.0.0.0.0.177.320.0j2.2.0....0...1.1.64.psy-ab..3.1.176.LOjRpj0hKrM}{meno di tre ore}
+			\cite{bancorProtocol}.
 			\item Progetti correlati alla blockchain hanno raccolto più di 
-			\href{https://www.coindesk.com/1-6-billion-all-time-ico-funding-climbs-as-record-500-million-invested-in-july/}{\$1.6 miliari tramite le ICO} 
+			\href{https://www.coindesk.com/1-6-billion-all-time-ico-funding-climbs-as-record-500-million-invested-in-july/}{\$1.6 miliari tramite le ICO}
+			\cite{coindeskICOAllTimeHigh} 
 			ad oggi, mentre i venture capital hanno fornito solamente
-			\href{http://my.pitchbook.com/?pbr=14763750}{\$550 milioni} per compagnie in questa industria.
+			\href{http://my.pitchbook.com/?pbr=14763750}{\$550 milioni} \cite{pitchbook} per compagnie in questa industria.
 		\end{itemize}
 		\begin{center}
 			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{FundsCollectedICO}
@@ -1153,18 +1161,24 @@ PreSale e RIPA TEC:
 			\item \textbf{Commerciali}. Mentre gli Stati Uniti hanno fatto una stretta nelle
 			attività di regolamentazione, in paesi come la 
 			\href{https://techcrunch.com/2013/08/19/germany-recognizes-bitcoin-as-private-money-sales-tax-coming-soon/}{Germania} 
-			ed il \href{http://www.ibtimes.co.uk/hmrc-re-classify-bitcoin-private-money-1432718}{Regno Unito},
+			\cite{techCrunchPrivateMoney}
+			ed il \href{http://www.ibtimes.co.uk/hmrc-re-classify-bitcoin-private-money-1432718}{Regno Unito}
+			\cite{ibtimesPrivateMoney},
 			le criptovalute sono trattate come ``valuta privata'' e non sono soggette a tassazione a parte per l'uso commerciale.
 			\item \textbf{Regolatori}. Lo stato di New York ha creato il 
-			\href{https://www.wired.com/2014/07/ny_bitcoin/}{sistema BitLicense}, per autorizzare
+			\href{https://www.wired.com/2014/07/ny_bitcoin/}{sistema BitLicense}
+			\cite{wiredNYLicense}, per autorizzare
 			compagnie per eseguire attività di cambia valuta virtuale con residenti dello stato di New York.
 			A metà 2017 solo tre BitLicense sono state rilasciate ed un numero elevato di richieste sono
 			state rimosso o rifiutate. In Asia, dove la richiesta di criptovalute è in ascesa,
 			i governi \href{http://fortune.com/2018/01/17/china-bitcoin-cryptocurrency-crackdown/}{Cinese}
+			\cite{fortune}
 			e \href{https://www.bloomberg.com/news/articles/2017-12-13/south-korea-seeks-measures-to-curb-frenzied-bitcoin-speculation}{Sud Coreano} 
+			\cite{bloombergSKBan}
 			hanno preso una posizione rigida nella regolamentazione delle criptovalute.
 			\item \textbf{Sicurezza}. La 
-			\href{https://www.forbes.com/sites/laurashin/2016/12/20/hackers-have-stolen-millions-of-dollars-in-bitcoin-using-only-phone-numbers/#3ac0bf1d38ba}{FTC ha registrato} 
+			\href{https://www.forbes.com/sites/laurashin/2016/12/20/hackers-have-stolen-millions-of-dollars-in-bitcoin-using-only-phone-numbers/#3ac0bf1d38ba}{FTC ha registrato}
+			\cite{forbesBitcoinHacking} 
 			un aumentare in denuncie di furto di identità di più del 100\% tra il 2013 ed il 2016,
 			e Coinbase, il più grande exchange degli Stati Uniti, ha visto un raddoppio nel numero dei furti di 
 			account tra Novembre e Dicembre 2016.
@@ -1181,7 +1195,7 @@ seguenti numeri operativi:
 
 Impostata una commissione di transazione del 0,20\% il fatturato per il primo anno di operatività è atteso
 essere nell'ordine di 180 BTC mentre il fatturato per gli anni dal secondo al quinto sono previsti nel range 
-descritto dalla figura \ref{fig:fiveYearsProhections} a seguire.
+descritto dal grafico in figura \ref{fig:fiveYearsProhections}.
 \begin{center}
 	\begin{tikzpicture}
 		\begin{axis}[
@@ -1224,7 +1238,7 @@ che servirà ai seguenti scopi:
 	\item per condividere liquidità tra tutti gli exchnage della rete Ripa
 \end{enumerate}
 E' nostro obbiettivo principale che l'economia del token XPX sia in salute per tutta la durata del progetto RipaEx,
-per tale ragione applicheremo strategie di economia di mercato\footnote{Come la bruciatura dei token non coperti
+per tale ragione applicheremo strategie di economia di mercato\footnote{Come la distruzione dei token non coperti
 da fondi di ICO} all'economia dei token XPX per far si che il presso sia in costante ascesa per tutta la durata
 del progetto ed oltre.
 

@@ -2,7 +2,6 @@
     "spellright.language": "it",
     "spellright.documentTypes": [
       "markdown",
-      "latex",
       "plaintext"
     ],
     "latex-workshop.latex.clean.fileTypes": [
@@ -28,7 +27,8 @@
         "*.bcf",
         "*.ilg",
         "*.run.xml",
-        "*.synctex.gz"
+        "*.synctex.gz",
+        "*.tdo"
     ],
     "latex-workshop.latex.recipes": [
         {

@@ -197,7 +197,7 @@ To this end, RFT intervenes on behalf of \emph{Ripa Exchange, a company in the p
 		\item[\textsc{ARK:}] a platform for consumer adoption of blockchain technologies \cite{ark}
 		\item[\textsc{ACES:}] Ark Contract Execution Services \cite{aces} provides simple protocols and tools for building a robust 
 		blockchain service marketplace based on the ARK SmartBridge technology
-		\item[\textsc{“,” or “.”:}] The Anglo-Saxon use of decimal points and commas to represent numbers has
+		\item[\textsc{``,'' or ``.'':}] The Anglo-Saxon use of decimal points and commas to represent numbers has
 		been chosen for the purposes of this document: that is to say that a “.” represents a decimal point, and a “,”
 		distinguishes between multiples of thousands, millions and billions.
     \end{description}
@@ -267,8 +267,10 @@ and Financial Organizations are also represented. The Partners are:
 	\item \textbf{Coordinator}: Ripa Exchanges Ltd
 	\item \textbf{CoBeneficiaries}: 
 \end{itemize}
+\todo{TODO: AGGIUNGERE PARTNER RIPAEX}
 \subsection{RipaEx Governance}\index{RipaEx Governance}
 Governance for the network of exchanges created, development of the source code, owning of the XPX tokens, Ripa Foundation.
+\todo{TODO: DEFINIRE LA GOVERNANCE RIPAEX}
 
 \section{Project Summary}
 \begin{enumerate}
@@ -399,9 +401,9 @@ Governance for the network of exchanges created, development of the source code,
 
 	\item \textbf{\textsc{why}}: There is consensus in the literature that the use of virtual currencies in place of fiat currencies will result in 
 	higher financial freedom especially as they fit into the Austrian school of economy \cite{austrianTheory} 
-	(TODO: add more on Austrian economics school)
+	\todo{TODO: add more on Austrian economics school}
 
-	\item \textbf{\textsc{why}}: Benefits of virtual currencies schemes (TODO: put some numbers)
+	\item \textbf{\textsc{why}}: Benefits of virtual currencies schemes \todo{TODO: put some numbers}
 
 	\item \textbf{\textsc{how}}: Securing assets on the blockchains means basically performing three operations
 		\begin{enumerate}[label*=\arabic*.]
@@ -413,6 +415,7 @@ Governance for the network of exchanges created, development of the source code,
 		\end{enumerate}
 	At this point any value sent to the virtual currency address generated in (3) is secured on the blockchain of choice and accessible
 	only from the owner of the relative private key generated in (1).
+	\todo{TODO: more details here}	
 	\item \textbf{\textsc{where}}: The two critical factors affecting the cryptocurrency industry are banks concurrence and State banning.
 	Although a harmonization throughout Europe would be beneficial to development of the industry both in terms of 
 	taxation and warranty approvals, this is currently not the case. Each country has its specific legislation and tax
@@ -438,8 +441,8 @@ Governance for the network of exchanges created, development of the source code,
 	\item \textbf{\textsc{who}}: While it is very expensive to insure money exchanges operations and money transmitting operations, 
 	examples of customer protections in the industry are: Kraken platform which is offering Mt. Gox users partial refund
 	of their lost, NEO community giving refund to the users involved in the BitGrail hacking, Ethereum supporters
-	giving The DAO investors partial refunds, other hacking cases...
-
+	giving The DAO investors partial refunds, other hacking cases...	
+	\todo{TODO: more details here}
 	\item \textbf{\textsc{Recommendations for all/law compliance}}: if you intend to incorporate a FIAT $\Leftrightarrow$ CRYPTO exchange you should
 	focus from the first instance on law compliance by studying the AML/KYC laws of the country of incorporation and
 	finding bank partners to work with. Local financial Authority can help to comply with rules \& regulations and 
@@ -547,6 +550,7 @@ equal height group=nobefaf,width=(\linewidth-1pt)/3, height=5.0cm, nobeforeafter
 \end{tcolorbox}
 
 \section{Functional Analysis}
+\todo{TODO: more details here}
 \begin{enumerate}
 	\item \textsc{Why Redis-RabbitMQ is needed}:
 	\item \textsc{Why NodeJS}: 
@@ -556,6 +560,7 @@ equal height group=nobefaf,width=(\linewidth-1pt)/3, height=5.0cm, nobeforeafter
 \end{enumerate}
 
 \section{Technology Stack}
+\todo{TODO: more details here}
 \begin{itemize}
 	\item \textbf{\textsc{Ruby on Rails}}:
 	\item \textbf{\textsc{MySQL}}: 
@@ -1035,14 +1040,18 @@ Following the matrix of development per area of interest based on the funds coll
 	\subsection{Cryptocurrency Market Size and Technology}
 		\begin{itemize}
 			\item The cryptocurrency market cap has been projected to reach as high as 
-			\href{https://www.ccn.com/cryptocurrency-market-cap-to-reach-2-trillion-in-2018-mike-novogratz/}{\$1-2 trillion in 2018}.
-			\item The market cap of Bitcoin exceeded \href{https://coinmarketcap.com/currencies/bitcoin/historical-data/}{\$70 billion}, 
+			\href{https://www.ccn.com/cryptocurrency-market-cap-to-reach-2-trillion-in-2018-mike-novogratz/}{\$1-2 trillion in 2018}
+			\cite{novograzPrediction}.
+			\item The market cap of Bitcoin exceeded \href{https://coinmarketcap.com/currencies/bitcoin/historical-data/}{\$70 billion}
+			\cite{coinmarketcapHistorical}, 
 			with peak trading volumes around \$3 billion per day.
 			\item Technology consulting firm CB Insights has identified \href{https://www.cbinsights.com/blog/industries-disrupted-blockchain/}{27 ways} 
-			blockchain can fundamentally change processes as diverse as banking, cybersecurity, voting, and academics.
+			\cite{cbinsights} blockchain can fundamentally change processes as diverse as banking, cybersecurity, voting, and academics.
 			\item The World Economic Forum estimates that by 2027, 
-			\href{http://www3.weforum.org/docs/WEF_GAC15_Technological_Tipping_Points_report_2015.pdf}{10\% of global GDP} will be stored on blockchain technology.
-			\item Most mining pools are located in China, comprising \href{https://www.buybitcoinworldwide.com/mining/china/}{more than 70\%} 
+			\href{http://www3.weforum.org/docs/WEF_GAC15_Technological_Tipping_Points_report_2015.pdf}{10\% of global GDP} \cite{wefTTP} 
+			will be stored on blockchain technology.
+			\item Most mining pools are located in China, comprising 
+			\href{https://www.buybitcoinworldwide.com/mining/china/}{more than 70\%} \cite{bitcoinMiningChina}
 			of total Bitcoin mining. China manufactures most cryptocurrency mining equipment and leverages the country’s cheap electricity prices.
 		\end{itemize}
 		\begin{center}
@@ -1052,20 +1061,25 @@ Following the matrix of development per area of interest based on the funds coll
 
 	\subsection{Types of Cryptocurrencies}
 		\begin{itemize}
-			\item There are \href{https://coinmarketcap.com/all/views/all/}{over 1,000 cryptocurrencies} in existence right now (called ``altcoin''); 
+			\item There are \href{https://coinmarketcap.com/all/views/all/}{over 1,000 cryptocurrencies} \cite{coinmarketcapAll} 
+			in existence right now (called ``altcoin''); 
 			over 600 have market capitalizations of over \$100,000.
 			\item While Bitcoin’s price has generally been following upward trend, in early 2018, Bitcoin’s price fell sharply, 
 			\href{https://www.cnbc.com/2018/02/05/bitcoin-price-drops-below-8000-over-60-billion-wiped-off-cryptocurrencies.html}{dipping below \$8,000} 
+			\cite{cnbcBitcoinPriceSurge}
 			as news of tougher regulation from China and South Korea surfaced. Bitcoin's price also fell 
 			following announcements of \href{http://www.latimes.com/business/la-fi-bitcoin-sec-registration-20180307-story.html}{SEC crackdown} 
+			\cite{laTimes}
 			on crypto exchanges and after Binance 
-			\href{https://www.ft.com/content/58a32050-22aa-11e8-add1-0e8958b189ea}{was reportedly hacked}.
+			\href{https://www.ft.com/content/58a32050-22aa-11e8-add1-0e8958b189ea}{was reportedly hacked}
+			\cite{ftBinanceHack}.
 			\item Bitcoin’s market share has fallen from 81\% in June 2016 to 41\% one year later, in June 2017. 
 			However, Bitcoin’s price has continued to soar.
 			\item In August 2017, Ether’s market capitalization was around \$28 billion. At one point, 
-			\href{http://www.zerohedge.com/news/2017-05-31/ethereum-forecast-surpass-bitcoin-2018}{commentators} anticipated that Ether’s market 
+			\href{http://www.zerohedge.com/news/2017-05-31/ethereum-forecast-surpass-bitcoin-2018}{commentators} \cite{zeroHedge}
+			anticipated that Ether’s market 
 			capitalization would surpass that of Bitcoin (the 
-			\href{https://www.flippening.watch/}{``flippening''}). 
+			\href{https://www.flippening.watch/}{``flippening''} \cite{flippening}). 
 			However, issues with Ethereum technology have since caused its value to decline.
 		\end{itemize}
 		\begin{center}
@@ -1077,18 +1091,23 @@ Following the matrix of development per area of interest based on the funds coll
 		\begin{itemize}
 			\item Supply and demand matters. The rate of increase of the supply of Bitcoin will decrease until the number 
 			of Bitcoin reaches 21 million, 
-			\href{https://www.coindesk.com/top-10-bitcoin-myths-debunked/}{which is expected to take place in the year 2140}. Similarly, 
+			\href{https://www.coindesk.com/top-10-bitcoin-myths-debunked/}{which is expected to take place in the year 2140}
+			\cite{mythsDebunked}. Similarly, 
 			the supply of Litecoin will be capped at 
-			\href{https://support.xbtce.info/Knowledgebase/Article/View/152/59/about-litecoin}{84 million units}.
+			\href{https://support.xbtce.info/Knowledgebase/Article/View/152/59/about-litecoin}{84 million units}
+			\cite{ltcLimits}.
 			\item Initial coin offerings are trending right now. This year, former Mozilla CEO Brendan Eich raised \$35 
 			million from an ICO in 
-			\href{https://techcrunch.com/2017/06/01/brave-ico-35-million-30-seconds-brendan-eich/}{less than 30 seconds}, 
+			\href{https://techcrunch.com/2017/06/01/brave-ico-35-million-30-seconds-brendan-eich/}{less than 30 seconds}
+			\cite{techCrunch}, 
 			and Bancor Protocol raised \$153 million in 
-			\href{https://www.google.com/search?q=Bancor+Protoco+ico&oq=Bancor+Protoco+ico&gs_l=psy-ab.3..0i13k1l2.253.542.0.578.4.3.0.0.0.0.177.320.0j2.2.0....0...1.1.64.psy-ab..3.1.176.LOjRpj0hKrM}{under three hours}.
+			\href{https://www.google.com/search?q=Bancor+Protoco+ico&oq=Bancor+Protocol+ico&gs_l=psy-ab.3..0i13k1l2.253.542.0.578.4.3.0.0.0.0.177.320.0j2.2.0....0...1.1.64.psy-ab..3.1.176.LOjRpj0hKrM}{under three hours}
+			\cite{bancorProtocol}.
 			\item Blockchain-related projects have raised more than 
 			\href{https://www.coindesk.com/1-6-billion-all-time-ico-funding-climbs-as-record-500-million-invested-in-july/}{\$1.6 billion via ICOs} 
+			\cite{coindeskICOAllTimeHigh} 
 			to date, while venture capitalists have provided only 
-			\href{http://my.pitchbook.com/?pbr=14763750}{\$550 million} for cryptocurrency companies.
+			\href{http://my.pitchbook.com/?pbr=14763750}{\$550 million} \cite{pitchbook} for cryptocurrency companies.
 		\end{itemize}
 		\begin{center}
 			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{FundsCollectedICO}
@@ -1099,17 +1118,22 @@ Following the matrix of development per area of interest based on the funds coll
 		\begin{itemize}
 			\item \textbf{Accounting}. While the US has been cracking down on unregulated activities, in countries such as 
 			\href{https://techcrunch.com/2013/08/19/germany-recognizes-bitcoin-as-private-money-sales-tax-coming-soon/}{Germany} 
-			and the \href{http://www.ibtimes.co.uk/hmrc-re-classify-bitcoin-private-money-1432718}{UK}, 
+			\cite{techCrunchPrivateMoney}
+			and the \href{http://www.ibtimes.co.uk/hmrc-re-classify-bitcoin-private-money-1432718}{UK}
+			\cite{ibtimesPrivateMoney}, 
 			cryptocurrencies are treated like ``private money'' and are not subject to tax outside of commercial use.
 			\item \textbf{Regulation}. New York State created the 
-			\href{https://www.wired.com/2014/07/ny_bitcoin/}{BitLicense system}, mandates for companies 
+			\href{https://www.wired.com/2014/07/ny_bitcoin/}{BitLicense system} \cite{wiredNYLicense}, mandates for companies 
 			before conducting business with New York residents. As of mid-2017, only three BitLicenses have been issued, 
 			and a far greater number withdrawn or denied. In Asia, where cryptocurrency demand has been soaring, 
 			the \href{http://fortune.com/2018/01/17/china-bitcoin-cryptocurrency-crackdown/}{Chinese} 
+			\cite{fortune}
 			and \href{https://www.bloomberg.com/news/articles/2017-12-13/south-korea-seeks-measures-to-curb-frenzied-bitcoin-speculation}{South Korean} 
+			\cite{bloombergSKBan}
 			governments have taken hard stances on cryptocurrency regulation.
 			\item \textbf{Security}. The 
 			\href{https://www.forbes.com/sites/laurashin/2016/12/20/hackers-have-stolen-millions-of-dollars-in-bitcoin-using-only-phone-numbers/#3ac0bf1d38ba}{FTC recorded} 
+			\cite{forbesBitcoinHacking} 
 			an increase in identity fraud complaints of more than 100\% between 2013 and 2016, 
 			and Coinbase, the largest US-based exchange, saw account hacking double just between November and December 2016.
 		\end{itemize}
@@ -1571,4 +1595,6 @@ To be part of our active community or learn more about what we do:
 %\begin{center}
 %	\noindent Page intentionally left blank
 %\end{center}
+\chapterimage{chapter_head_10_Frankfurt.jpg} % Chapter heading image
+\listoftodos
 \end{document}

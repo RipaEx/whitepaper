@@ -88,9 +88,7 @@ equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobef
 		title=\textbf{\textsc{Funding the project: XPX PreSale and RIPA TEC (WP2)}}]
 
 		This phase recognizes the existence of interest in this market development
-		from across the World concerning the lowering of the entry level for building a cryptocurrency exchange.
-		It aims to make the first comprehensive analysis of this state of the art to form the basis of the later project phases and
-		build the first working prototype of a centralized exchange based on Peatio.\\
+		from across the World concerning the lowering of the entry level for building a cryptocurrency exchange.\\
 		\vspace{1cm}
 		\centering\textbf{\textsc{Phase ending January 2019}}.
 	\end{tcolorbox}
@@ -111,11 +109,7 @@ equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobef
 		During the full duration of the project, 
 		dissemination activities (WP 7/8) are carried out in which results from the individual work packages are disseminated 
 		to relevant target groups including project partners, RipaEx investors, exchanges managers, banking partners as well 
-		as relevant target groups. This phase covers a wide range of dissemination techniques, from printed and
-		electronic handbooks to workshops and training sessions, hackatons, ongoing networks, all having the
-		ultimate goal of defining a standard for exchange communication among public and private entities. 
-		An overarching work package is concerned with the management of the project from start to finish, 
-		ensuring proper coordination, quality assurance and budgetary control (WP1).
+		as relevant target groups.
 	\end{tcolorbox}
 	\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
 	\begin{tcolorbox}[roadmapBox,
@@ -247,18 +241,13 @@ At the first working Ripa Exchange instance opening the following features will 
 	\item \textsc{Orders Type}: market, limit
 \end{itemize}
 
-\section{The Ripa Blockchain}
-The RipaEx project will have its own blockchain called Ripa which will be run on the DPOS protocol and has the XPX 
-token (\PHP symbol) running on it that will serve the five following purposes:
-	\begin{enumerate}
-		\item to list new cryptocurrencies on Ripa Exchanges
-		\item to advertise new projects
-		\item to buy RipaEx gadget on the RipaEx Store
-		\item to pay for the sell of goods \& services on authorized resellers with our RipaEx POS (Point of Sale)
-		\item to share liquidity between Ripa Exchanges in the same network
-	\end{enumerate}
+\subsection{Development Timeline}
+\begin{center}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{RipaExchange_HLPlan.PNG}
+	\captionof{figure}{Ripa Exchange Development Timeline}
+\end{center}
 
-\subsection{Delegated Proof of Stake Technology}
+\section{The Ripa Blockchain}
 Ripa Blockchain, will inherits the Delegated Proof of Stake (DPoS) consensus system that was first introduced
 by BitShares. This consensus algorithm was designed to eliminate the issues associated with Proof of Work (PoW), 
 namely the centralization of computing power and the exponentially increasing waste of real world energy. While not
@@ -306,31 +295,6 @@ Instead, a mechanism to bridge together blockchains is provided via a bridging
 function built into ARK Core where any blockchain can send and receive trigger
 function notices and informational data through the primary ARK network via
 custom developed \textbf{SmartBridge(s)} and \textbf{Encoded Listeners}.
-\begin{center}
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ARKSmartBridge}
-	\captionof{figure}{ARK SmartBridge Technology}
-\end{center}
-
-\subsubsection{A.C.E.S. - ARK Contract Execution Service}
-ACES is a blockchain interoperability platform that provides simple protocols and tools for building a robust blockchain 
-service marketplace.
-
-ACES is composed mainly of the following three components:
-\begin{itemize}
-	\item \textbf{Listeners} ACES Listeners provide a way for all the different blockchain transaction events to be easily 
-	consumed via a common REST-ful API. The API allows consumers to create subscriptions and receive blockchain events 
-	in real-time using Webhook callbacks.
-	\item \textbf{Services} ACES Services create and execute Service Contracts, which can be anything from uploading 
-	a file to a storage blockchain, performing value transfers, creating smart contracts, executing code on 
-	blockchain based computing platforms, or interacting with IoT hardware.
-	\item \textbf{Marketplace Console} The ACES Marketplace Console is a consumer dashboard for searching and executing 
-	service contracts listed on the Marketplace. ACES Service providers can list their service nodes using the Marketplace API.
-\end{itemize}
-
-\begin{center}
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ACES}
-	\captionof{figure}{ARK-BTC A.C.E.S. SmartBridge Implementation Overview}
-\end{center}
 
 \subsection{Ripa Liquidity Service Provider (R.L.S.P)}
 Using the SmartBridge technology RipaEx will build a mechanism to share liquidity between all the exchanges in the Ripa network

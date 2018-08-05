@@ -61,15 +61,15 @@ As we want that the customer experience will be the sleekest possible, while mak
 \section{Key Terminology}
 	\begin{description}
 		\item[\textsc{Ripa Exchange:}] a FIAT $\Leftrightarrow$ CRYPTO exchange (a cryptocurrency exchange) based on the source code
-		of Peatio \cite{peatio}
+		of Peatio
 		\item[\textsc{Ripa Blockchain:}] a DPOS blockchain in which liquidity is shared for all the exchanges in the Ripa network
 		\item[\textsc{Ripa Token - XPX:}] a cryptographically secure token exchanged on the Ripa blockchain based on the DPOS protocol
 		\item[\textsc{RIPA:}] the DPOS financial ecosystem composed of Ripa Exchange and Ripa Blockchain
 		\item[\textsc{RIPAEX:}] the name of the project, project website and hosted domain
 		\item[\textsc{RLSP:}] Ripa Liquidity Service Provider, a shared orderbook to exchange orders and liquidity between exchanges in the same Ripa network
 		\item[\textsc{RipaEx ICO:}] the name of fixed exchange rate token exchange period composed of both the phases of PreSale and RIPA TEC
-		\item[\textsc{ARK:}] a platform for consumer adoption of blockchain technologies \cite{ark}
-		\item[\textsc{ACES:}] Ark Contract Execution Services \cite{aces} provides simple protocols and tools for building a robust 
+		\item[\textsc{ARK:}] a platform for consumer adoption of blockchain technologies
+		\item[\textsc{ACES:}] Ark Contract Execution Services provides simple protocols and tools for building a robust 
 		blockchain service marketplace based on the ARK SmartBridge technology
 		\item[\textsc{``,'' or ``.'':}] The Anglo-Saxon use of decimal points and commas to represent numbers has
 		been chosen for the purposes of this document: that is to say that a “.” represents a decimal point, and a “,”
@@ -246,6 +246,7 @@ At the first working Ripa Exchange instance opening the following features will 
 \end{center}
 
 \section{The Ripa Blockchain}
+\label{sec:theRipaBlockchain}
 Ripa Blockchain, will inherits the Delegated Proof of Stake (DPoS) consensus system that was first introduced
 by BitShares. This consensus algorithm was designed to eliminate the issues associated with Proof of Work (PoW), 
 namely the centralization of computing power and the exponentially increasing waste of real world energy. While not
@@ -293,6 +294,10 @@ Instead, a mechanism to bridge together blockchains is provided via a bridging
 function built into ARK Core where any blockchain can send and receive trigger
 function notices and informational data through the primary ARK network via
 custom developed \textbf{SmartBridge(s)} and \textbf{Encoded Listeners}.
+\begin{center}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ACES}
+	\captionof{figure}{ARK-BTC A.C.E.S. SmartBridge Implementation Overview}
+\end{center}
 
 \subsection{Ripa Liquidity Service Provider (R.L.S.P)}
 Using the SmartBridge technology RipaEx will build a mechanism to share liquidity between all the exchanges in the Ripa network

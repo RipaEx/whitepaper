@@ -1,0 +1,333 @@
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2: Introduction
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_2_London.jpg} % Chapter heading image
+\chapter{Introduzione}
+Il livello di accesso all'industria delle valute virtuali è piuttosto elevato da un punto di vista tecnico per l'utente medio, 
+ed ha un livello di accesso economicamente elevato per l'imprenditore che vuole avviare un'attività in questo campo, valore dato 
+dall'acquisto del codice sorgente dell'exchange di criptovalute, dal reclutamento di personale che gestirà l'infrastruttura informatica,
+per reclutare operatori di supporto tecnico, per sottostare alle leggi nazionali ed internazionali in materia di AML/KYC, per avere liquidità
+dal primo giorno di avvio delle operazioni di cambio. Con questo progetto, Ripa Exchange, vuole abbassare questo livello di ingresso 
+perchè \textbf{gestire un exchange è DIFFICILE} ed il Team RipaEx vuole che il lettore e futuro imprenditore nel campo delle valute
+virtuali si concentri su cose veramente importanti non cavilli burocratici che l'industria richiede perchè TU vuoi avviare un'attività
+in questo campo e tu necessiti del codice sorgente per avviarla, codice sorgente che deve essere concesso gratuitamente alla tua attività.
+
+Per rafforzare questo principio economico il punto è che per avviare un exchange è richiesto un investimento esiguo dal tuo 
+venture capital di riferimento e anche con un tale investimento il ritorno dei fondi investiti all'angel investor non sono garantiti
+nei primi 5 anni di attività.
+
+Per avviare un servizio professionale di cambiavaluta virtuale crediamo che il codice sorgente dell'exchange e la liquidità da offrire ai tuoi clienti
+dal primo giorno di attività dovrebbero esserti forniti gratuitamente: non deve essere accettabile pagare \euro150.000,00 ad una software house
+solo per avere una piattaforma che funzioni e per la quale dovete erogare altri \euro100.000,00-150.000,00 per brandizzarla, personalizzarla
+per i vostri scopi legandovi in questo modo ad una singola software house che potrebbe fallire in futuro e che vi farebbe ritrovare
+senza poter fare ulteriori modifiche al vostro exchange in quanto non vi hanno mai consegnato il codice sorgente della piattaforma
+su cui il vostro business fa affidamento.
+
+\textbf{Noi crediamo che tutto questo debba essere gratuito}: dobbiamo offrirti la miglior tecnologia nel mercato attuale in modo tale che tu 
+possa focalizzarti sulla tua attività mentre noi ci focalizziamo in sviluppare la tecnologia per gestire la tua attività in maniera efficiente, 
+sicura, responsiva e produttiva. Questo è il motivo per cui RipaEx si prefigge lo scopo di sviluppare una rete di exchange
+focalizzandosi su di un'architettura che è \textit{efficiente, sicura, responsiva, compliant e personalizzabile} in modo tale che ogni exchange
+nella rete può basarsi su di fondamenta solide mentre è comunque possibile modificare la singola istanza secondo le personalizzazioni 
+che la compagnia che gestisce quell'istanza richiede.
+
+Per raggiungere questo scopo abbiamo scelto di sviluppare la tecnologia Ripa Liquidity Service Provider basata su ARK - a blockchain for consumer adoption - 
+il cui obbiettivo primario è incrementare l'adozione delle tecnologie blockchain agli utenti finali focalizzandosi su due aree critiche: 
+\underline{Una Efficiente e Sicura Tecnologia di Base} e \underline{Servizi Reali per Gente Comune}. L'ecosistema ARK è ancora ad uno stadio
+iniziale di sviluppo: la futura implementazione di ARK 2.0 permetterà di eseguire smart contract nativi sulla blockchain, che permetteranno
+alla blockchain ARK di competere con la sua concorrente Ethereum da un punto di vista tecnologico. RLSP permetterà a tutti gli exchange della rete Ripa
+di scambiare liquidità condividendo lo stesso libro degli ordini in base ai parametri di condivisione della singola istanza dell'exchange Ripa
+configurabili nella tua area amministratore.
+
+Il Ripa Founder Team (RFT), come presentato in ripaex.io, opera nel nome del gruppo Ripa. L'RFT è responsaile per l'uso corretto dei finanziamenti
+ottenuti nella campagna di scambio token RIPA TEC come spiegato di seguito in questo documento.
+
+Il RFT dispone che i fondi delle fasi di PreSale e RIPA TEC saranno usati esclusivamente per il finanziamento del progetto 
+\emph{RipaEx} come spiegato in questo whitepaper, che saranno resi disponibili per estrazione nella piattaforma apposita resta disponibile
+più tardi quest'anno tec.ripaex.io, e che dovranno risultare nella creazione di una entità legale che sarà chiamata \emph{RipaEx}. La creazione di tale 
+compagnia è pianificata per il primo quadrimestre del 2019.
+
+Fino a tale data RFT opera invece di \emph{RipaEx, una compagnia nel processo di essere incorporata}.
+
+\section{Terminologia}\index{Terminologia}
+\begin{description}
+	\item[\textsc{Ripa Exchange:}] un exchange FIAT $\Leftrightarrow$ CRYPTO sviluppato partendo dal codice sorgente di Peatio \cite{peatio}
+	\item[\textsc{Ripa Blockchain:}] una blockchain DPOS in cui la liquidità ed il libro mastro degli ordini sono condivisi tra tutti gli exchange della rete
+	\item[\textsc{Ripa Token - XPX:}] un token crittograficamente sicuro tramite il protocollo DPOS scambiato sulla blockchain Ripa 
+	\item[\textsc{RIPA:}] l'ecosistema finanziario DPOS composto da Ripa Exchange e Ripa Blockchain
+	\item[\textsc{RIPAEX:}] il nome del progetto, sito web del progetto e domini del progetto
+	\item[\textsc{RLSP:}] Ripa Liquidity Service Provider, un libro ordini condiviso tra gli exchange nella stessa rete Ripa
+	\item[\textsc{RipaEx ICO:}] il nome del periodo di cambiavaluta a tasso fisso composto dalle fasi di PreSale e RIPA TEC	
+	\item[\textsc{ARK:}] una piattaforma per l'adozione consumer di tecnologie blockchain \cite{ark}
+	\item[\textsc{ACES:}] Ark Contract Execution Services \cite{aces} fornisce semplici protocolli e strumenti per costruire robusti
+	mercati di scambio tra blockchain basati sulla tecnologia ARK SmartBridge
+	\item[\textsc{``,'' o ``.'':}] la notazione italiana per virgola decimale e punti di migliaia è stata scelta per la stesura di questo 
+	whitepaper: detto questo “,” rappresenta un punto decimale e “.” rappresenta la separazione tra migliaia e multipli di migliaia 
+\end{description}
+
+%\pagebreak
+\section{Roadmap}
+Saranno percorse essenzialmente quattro fasi del progetto RipaEx:
+\tcbset{roadmapBox/.style={colback=yellow!10!white,colframe=azure(colorwheel),
+equal height group=nobefaf,width=(\linewidth-1pt), height from=4cm to 8cm, nobeforeafter,
+	center title,
+	valign=top, halign=left}}
+\begin{center}
+\begin{tcolorbox}[roadmapBox,
+	title=\textbf{\textsc{Finanziamneto del progetto: XPX presale e RIPA TEC (WP2)}}]
+
+	Questa fase riconosce l'esistenza di un interesse in questo sviluppo di mercato
+	da un capo del Mondo all'altro in riguardo l'abbassamento del livello economico di ingresso
+	per sviluppare exchange di criptovalute.
+	L'obbiettivo è di eseguire la prima analisi omnicomprensiva dello stato dell'arte per fondare
+	le basi delle fasi sucessive del progetto e per sviluppare il primo prototipo
+	funzionante di un exchange centralizzato con il codice di Peatio.\\
+	\vspace{1cm}
+	\centering\textbf{\textsc{Prevista fine della fase: Gennaio 2019}}.
+\end{tcolorbox}
+\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+\begin{tcolorbox}[roadmapBox,
+	title=\textbf{\textsc{Apertura del primo exchange e sviluppo di strumenti e risorse (WP3)}}]
+
+	La seconda fase prende i risultati della prima e sviluppa da qui
+	una serie di strumenti e risorse che offrono guida concisa ed omnicomprensiva per 
+	i player senza considerare lo Stato di incorporazione/sviluppo del progetto. Con la prima
+	istanza di Ripa Exchange in esecuzione/aperta al pubblico i primi contatti con altri player economici
+	nell'industria delle valute virtuali possono essere presi.\\
+	\vspace{1cm}
+	\centering\textbf{\textsc{Prevista fine della fase: Giugno 2019}}.
+\end{tcolorbox}
+\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+\begin{tcolorbox}[roadmapBox,
+	title=\textbf{\textsc{Esecuzione, diffusione (WP 7/8) e Coordinamento del Progetto (WP1)}}]
+
+	Durante tutta la durata del progetto,
+	attività di diffusione (WP 7/8) sono eseguite nelle quali i risultati dei singoli
+	pacchetti di lavoro individuali sono consegnati ai relativi gruppi obbiettivo inclusi
+	partners del progetto, investitori RipaEx, manager di exchange, partner bancari come anche
+	tutti gli altri gruppi obbiettivo rilevanti al progetto RipaEx in esecuzione.
+	Questa fase copre una vasta scala di tecniche di diffusione, da libri stampati ed 
+	elettronici, a workshop e sessioni di training, hackatons, tutti aventi 
+	come obbiettivo di definire standard per la comunicazione tra exchange gestiti da entità 
+	pubbliche e private nell'industria delle valute virtuali.
+	Un pacchetto di lavoro globale riguardante la gestione del progetto dall'inizio alla fine, 
+	assicurando coordinazione adeguata, quality assurance e controllo del budget (WP1).
+\end{tcolorbox}
+\resizebox{0.05\textwidth}{26pt}{$\Downarrow$}
+\begin{tcolorbox}[roadmapBox,
+	title=\textbf{\textsc{Sviluppo di un exchange ibrido-decentralizzato (WP 4-6)}}]
+
+	Usando gli strumenti e le risorse sviluppate in WP3, il pacchetto di lavoro 4-6
+	si focalizza di mettere in pratica la conoscenza acquisita e gli strumenti. I tre
+	pacchetti di lavoro riflettono tre punti focali (e gruppi target) nel network di 
+	exchange creato per installare demo di successo su scala locale, nazionale ed internazionale:
+	l'incorporazione di istanze di Ripa Exchange locali (WP4), analisi tecnica della tecnologia
+	Ripa Liquidity Service Provider (WP5), e primo MVP dell'exchange ibrido decentralizzato (WP6).
+	La fase demo dal cuore dell'azione RipaEx; WP 2 e 3 focalizzano in produrre consegne (ad esempio
+	strumenti) che abilitano attività di produzione demo efficienti e di successo.\\
+	\vspace{1cm}
+	\centering\textbf{\textsc{Prevista fine della fase: Gennaio 2021}}.
+\end{tcolorbox}
+\end{center}
+
+\section{RipaEx Partners - RipaEx Governance}\index{RipaEx Partners - RipaEx Governance}
+La maggior parte dei parnter sono imprenditori nell'industria delle valute virtuali, tuttavia
+un Istituto di Ricerca ed Organizzazioni Finanziari sono anche presenti. I partner sono:
+\begin{itemize}
+	\item \textbf{Coordinatore}: RipaEx SCIC 
+	\item \textbf{CoBeneficiari}: Ripa Exchange Ltd \todo{TODO: AGGIUNGERE PARTNER RIPAEX}
+\end{itemize}
+
+\subsection{RipaEx Governance}\index{RipaEx Governance}
+La creazione di nuovi exchange nella rete Ripa, il rilascio dei fondi dell'RCF per la creazione di nuovi exchange saranno decise
+su votazione maggioritaria dei delegati della rete Ripa. Le modifiche del singolo exchange, invece, saranno appannaggio 
+esclusivo della compagia che gestisce la singola istanza dell'exchange.
+
+Il progetto RipaEx si incorporerà come società di interesse collettivo per profitto appena la rete Ripa sarà stabile, mentre Ripa Exchange Ltd
+società a gestione della prima istanza di exchange in esecuzione sarà incorporata come compagnia privata nel primo quarto
+del 2019.
+
+\section{Sommario del Progetto}
+\begin{enumerate}
+	\item \textbf{\textsc{cosa}}: RipaEx è un progetto per facilitare la presa di standard per condividere liquidità tra mercati di asset
+	criptosicuri (crypto asset marketplace).
+	L'obbiettio di RipaEx è la promozione di codice sorgente condiviso per portafogli ed exchange nell'industria delle valute
+	virtuali: è obbiettivo di questo documento di riferimento di dare informazioni dettagliate per futuri
+	sviluppatori di exchange oppure futuri imprenditori in questo campo, per abilitare processi di decision-making corretti e per 
+	assicurare il successo dei loro progetti proposti.
+	Il progetto RipaEx si prefigge l'obbiettivo di analizzare il potenziale reale di applicazione nel Paese scelto 
+	di una rete di exchange e la sua posizione nel mercato.
+	\item \textbf{\textsc{cosa}}: gli asset crittograficamente sicuri (aka: ``crypto assets'') sono un'alternativa agli asset emessi dalle borse
+	valori dei vari Paesi che ne possiedono una. Anche se, tuttavia, molte borse valori mondiali danno la possibilità ai loro 
+	utenti di verificare e gestire gli asset in loro possesso il processo non è sempre trasparente e/o semplice e questo è il motivo 
+	per cui a partire dal 2009 \cite{bitcoin} un nuovo tipo di asset (verificabile dalla comunità) è stato implementato
+	per dare a piccoli, medi e grandi investitori completa trasparenza nella gestione dei loro asset di investimento.
+	\item \textbf{\textsc{quanto}}: recenti sviluppo a livello dell'Unione Europea e globalmente stanno trasformando sia come le valute virtuali
+	sono trattate sia il modo in cui le ICO (Initial Coin Offering) sono legislate. Questi sviluppi combinati hanno messo
+	l'uso e la produzione di valute virtuali in una luce favorevole in costante ascesa. \\
+	In Ottobre 2015 la Corte Europea di Giustiza ha sentenziato che bitcoin ed altre valute virtuali sono esenti dalla tassazione IVA. \\
+	In Luglio 2016 la Commissione Europea ha adottato proposal per ammendare la legislazione vigente 4th Anti-Money Laundering Directive (4AMLD) 
+	che introduca le figure degli exchange di valute virtuali ed offritori di wallet all'interno del framework europeo di adeguata verifica
+	dell'utente ed antiriciclaggio \cite{EUAMLCrypto}.\\
+	In Febbraio 2018 la Commissione Europea lancia l'Osservatorio EU sulle Blockchain (EU Blockchain Observatory and Forum) \cite{EUBOaF} 
+	per osservare gli sviluppi chiave nella tecnologia blockchain, promuovere attori europei e rafforzare l'ingaggio europeo con
+	diversi stakeholders coinvolti in attività correlate alla blockchain.
+	\item \textbf{\textsc{perchè}}: c'è ancora poca regolamentazione sulle ICO e solo gli Stati Uniti d'America al momento
+	hanno scritto una legislazione definendo i token delle ICO come securities \cite{SECICO}.
+	\item \textbf{\textsc{chi}}: i risultati delle indagini di mercato indicano che il medio tech savvy dai 18 ai 45 anni di età è
+	l'utente medio delle valute virtuali tuttavia compagnie in finanza stanno anche comincianto ad inserire schemi di 
+	valute virtuali all'interno dei loro portafogli specialmente dalla presentazione del contratto bitcoin futures 
+	da parte del Gruppo CME Group Inc. nella borsa valori di Chicago lo scorso 18 Dicembre 2017.
+	\item \textbf{\textsc{quanto}}: la capitalizzazione di mercato totale dell'industria delle valute virtuali è stata stimata attorno
+	ai 317 miliardi di USD \footnote{Dati Coinmarketcap Aprile 2018}
+	ed è prevista la crecita a 5.000 miliardi di USD nel prossimo timeframe di 10 anni \cite{cryptoMCTenYears}.
+	\item \textbf{\textsc{dove}}: autorità locali stanno lavorando con i Governi Nazionali per essere certi che gli exchangers sul 
+	territorio nazionale di riferimento seguono le procedure nazionali ed internazionali di AML/KYC.
+	Venture Capital ed Angel Investors stanno cominciando a rilasciare soluzioni di finanziamento a start-up nell'industria delle
+	valute virtuali - FinTech in tutto il mondo, dall'America all'Asia passando per l'Europa ed alcuni Paesi
+	stanno avviando schemi di valuta virtuale statali per testare lo scambio di beni e servizi sulle tecnologie a libro 
+	mastro condiviso (DLTs - Distributed Ledger Technologies) \cite{petro}.
+	\item \textbf{\textsc{quanto costa}}: il costo medio per avviare il proprio crypto assets marketplace è attorno a \euro 150.000,00, 
+	al pagamento di tale somma avrete unicamente un'istanza in esecuzione della vostra piattaforma di cambio: al suddetto prezzo dovete aggiungere i costi
+	di personalizzazione della piattaforma prima del lancio ed in futuro, pubblicizzazione della piattaforma, costo di gestione dei server, 
+	amministratori di rete, operatori del centro di supporto e costo del dipartimento legale per seguire le leggi AML/KYC dello Stato
+	in cui avete deciso di incorporare il vostro exchange e per gestire l'amministrazione della compagnia dietro di esso.\\
+	\textbf{Questi costi nascosti sono la ragione per cui noi di RipaEx riteniamo che possedere il codice sorgente del proprio exchange è il miglior
+	modo per avviare e mantenere un'attività in questa industria}.
+	\item \textbf{\textsc{come}}: il problema principale nell'eseguire un'operazione di cambio FIAT $\Leftrightarrow$ CRYPTO è di trovare partner bancari affidabili
+	e nel seguire le differenti procedure AML/KYC del Paese o dei paesi di incorporazione.
+	\item \textbf{\textsc{cosa}}: le operazioni di cambio valuta virtuale classiche sono le seguenti:
+		\begin{itemize}
+			\item \textbf{scambio ad una-via}: nella quale un'applicazione centralizzata ha tutta la liqudità da offrire ai potenziali utenti
+			\item \textbf{scambio a due-vie}: nella quale un exchange centralizzato o decentralizzato accoppia richiesta di vendita con richiesta di aquisto degli utenti
+		\end{itemize}
+		Dalla classificazione data sopra una ulteriore sotto-classificazione è d'obbligo:
+		\begin{itemize}
+			\item \textbf{scambio FIAT $\Leftrightarrow$ CRYPTO}: nella quale lo scambio avviene tra valuta FIAT\footnote{Valute emesse dalle banche centrali: EUR, USD, GBP, JPY, altre...}
+			e valuta virtuale
+			\item \textbf{scambio CRYPTO $\Leftrightarrow$ CRYPTO}: nella quale lo scambio avviene tra valuta virtuale e valuta virtuale
+		\end{itemize}
+	Dalle quattro classificazioni sopra si può costruire una matrice con quattro possibili configurazioni per sviluppare la piattaforma di cambia valuta virtuale
+	che preferite.
+	\begin{tcbraster}[raster columns=3,raster rows=1,raster height=0.8cm,
+		valign=center, halign=center,
+		enhanced,size=small,sharp corners,colframe=azure(colorwheel),coltext=white,
+		colback=azure(colorwheel),fit algorithm=hybrid* ]
+		\tcboxfit{}
+		\tcboxfit{\textbf{una-via}}
+		\tcboxfit{\textbf{due-vie}}
+	\end{tcbraster}
+	\begin{tcbraster}[raster columns=3,raster rows=2,raster height=5cm,
+		valign=center, halign=center,
+		enhanced,size=small,sharp corners,colframe=silver,coltext=black,
+		colback=silver,fit algorithm=hybrid* ]
+		\tcboxfit{\textsc{\textbf{FIAT $\Leftrightarrow$ CRYPTO}}}
+		\tcboxfit{\tcbfontsize{0.8} applicazione di acquisto veloce}
+		\tcboxfit{\tcbfontsize{0.8} exchange con partnership bancaria}
+	
+		\tcboxfit{\textsc{\textbf{CRYPTO $\Leftrightarrow$ CRYPTO}}}
+		\tcboxfit{\tcbfontsize{0.8} applicazione di scambio veloce}
+		\tcboxfit{\tcbfontsize{0.8} exchange senza partnership bancaria}
+	\end{tcbraster}	
+
+	\item \textbf{\textsc{con cosa}}: le specifiche da guardare quando scegliere la propria piattaforma di exchange sono le seguenti: 
+		\begin{enumerate}[label*=\arabic*.]
+			\item \textbf{Codice}: Open Source, Closed Source oppure soluzione ibrida
+			\item \textbf{Modularità}: separazione tra l'engine di cambio (engine di accoppiamento ordini), la UI e l'anagrafica utenti
+			\item \textbf{Responsività della UI}: la UI deve essere responsiva su tutti i device (desktop e mobile)
+			\item \textbf{Conformità}: con gli standard industriali correnti e con la legislazione vigente
+			\item \textbf{Personalizzazione}: dell'engine di cambio, delle valute da offrire, della UI e di altri aspetti della piattaforma di cambio
+			\item \textbf{Sicurezza} dei fondi nell'exchange: possibilità di configurare il salvataggio dei fondi in cold wallet e hot wallet
+			\item \textbf{Trasparenza} dei fondi: proof of solvency dell'exchange
+			\item \textbf{Multi-Accounts trading}: possibilità di configurare facilmente nuovi mercati da offrire agli utenti
+			\item \textbf{Multi-Accounts users}: possibilià di loggarsi nella piattaforma tramite Google, Facebook, Twitter, e conformità
+			con gli standard della FIDO Alliance per le credenziali personali
+		\end{enumerate}	
+	\textbf{Queste non sono solo decisioni tecniche da prendere ma anche economiche} specialmente il possesso o meno del codice sorgente della propria 
+	piattaforma	crypto asset marketplace per permettere le future personalizzazioni del proprio exchange in maniera indipendente invece di affidarsi
+	ad una singola software house che esegua le personalizzazioni per voi.
+	\item \textbf{\textsc{come}}: possibili operazioni per trovare nuovi utenti per le vostre operazioni di cambia valuta virtuale sono:
+	campagne di marketing ``ad hoc'', funzionalità innovative nell'industria, livelli di tassazione del trading basati sulla quantità, 
+	bonus di registrazione e per quantità di scambiato giornaliero/settimanale/mensile, marketing affiliato per gli utenti che portano
+	amici a scambiare nell'exchange.
+	\item \textbf{\textsc{come}}: per incorporare una crypto asset marketplace un progetto deve tenere in considerazione la seguente legislazione:
+		\begin{itemize}
+			\item \textbf{AML/KYC}: \textit{Fourth Anti-Money Laundering Directive} se l'attività viene avviata nell'Unione Europea \cite{4AMLD} 
+			oppure la legge AML/KYC di riferimento nel Paese di incorporazione (ad esempio \textit{Intelligence Reform \& Terrorism Prevention Act of 2004}
+			emessa dalla FinCEN per incorporazione negli Stati Uniti d'America).\\
+			Raccomandazioni internazionali per eseguire verifiche AML/CFT sono data dalla Financial Action Task Force on Money Laundering \cite{FATF}.
+			\item \textbf{Licenza di Pagamento}: l'attività decisamente più ardua in riguardo alla legittimazione delle operazioni di cambio FIAT $\Leftrightarrow$ CRYPTO
+			è l'ottenimento di una \textit{Licenza PSD} \cite{PSD}.
+			La licenza PSD seguen la Direttiva del Concilio Europeo 2007/64/EC ed è applicata in ogni Paese attraverso le sue leggi nazionali.
+			Il costo di una licenza PSD può variare da centinaia di migliaia di euro ad un ordine di grandezza superiore al seconda del volume di affari.
+		\end{itemize}
+	\item \textbf{\textsc{chi}}: la natura dell'attività in considerazione del progetto RipaEx 
+	(una rete di piccoli exchange FIAT $\Leftrightarrow$ CRYPTO)
+	implica che ogni exchange debba avere uno staff di 7-8 persone: N.2 sviluppatori, N.1 operatore di rete/sicurezza, 
+	N.1 commerciale amministrativo, N.2 operatori di supporto tecnico, N.1 legale e consigliere sulla tassazione. \\
+	Il turnover di una tale compagnia tuttavia, considerato l'alto valore aggiunto del prodotto scambiato, e possibile che raggiunga cifre
+	superiori ad \euro 350.000 annui e possibilmente di un'ordine di grandezza superiore. Un'attività di questa dimensione
+	suggerisce automaticamente le possibili forme societarie: una ditta individuale, una società a responsabilità limitata,
+	una società non-profit o attività sociale, una cooperativa gestita dagli amministratori delegati dei vari exchange.
+	Le Agenzie Finanziarie sono attori fondamentali nell'indicare questa scelta, tuttavia la tipologia di attività da
+	incorporare dipende dallo status legale che si vuole dare alla stessa e questo varia da Paese a Paese.		
+	\item \textbf{\textsc{come}}: una risorsa di fondi per una marketplace di dimensioni piccole-medie può essere: prestito bancario,
+	prestito privato a basso interesse, credito commerciale, equity finanziario, venture capital di business angels. Avendo un
+	business plan consolidato e garanzie finanziarie adeguate sono elementi chiave nell'assicurarsi i finanziamenti necessari
+	allo sviluppo che si vuole eseguire. Il Fondo Europeo di Investimento (EIF) della Banca di Investimento Europea (EIB)
+	offre supporto nella forma di garanzia per le SME (piccole e medie imprese).
+	\item \textbf{\textsc{chi}}: gli argomenti per l'incorporazione di un crypto asset marketplace sono la libertà finanziaria, la
+	decentralizzazione delle operazioni di trasferimento del valore ed il reale possesso del proprio denaro.
+	Ci sono altri benefici, ben documentati, come pagamenti veloci, guadagno a lungo termine dato da un'economia deflazionaria, previsione
+	delle depressioni economiche come quella del 2008, ma soprattutto le valute virtuali sono l'unico competitor diretto alle operazioni
+	di trasferimento del valore centralizzate eseguite dalle banche centrali.
+	\item \textbf{\textsc{perchè}}: c'è consenso in letteratura che l'uso delle valute virtuali invece delle valute fiat permette un livello di
+	libertà finanziaria maggiore specialmente perchè queste tecnologie di trasferimento valore rientrano nella scuola
+	di economia Austriaca \cite{austrianTheory} secondo molte fonti \cite{misesItalia} anche se tuttavia bitcoin dà il meglio come
+	mezzo di scambio e mancherebbe della stabilità di tasso di cambio che la renderebbero una riserva di valore accettabile.
+	\item \textbf{\textsc{perchè}}: benefici delle tecnologie di valuta virtuale come bitcoin sono in una economia deflazionistica,
+	in un'emissione limitata di valuta, in trasferimenti di valore pressochè istantanei e senza barriere statali, in 
+	relativo anonimato e nella separazione tra entità che producono la moneta (miner) ed entità che definiscono la teoria monetaria
+	alla base della stessa (sviluppatori).
+	\item \textbf{\textsc{come}}: securizzare asset sulla blockchain significa semplicisticamente eseguire le tre operazioni
+		\begin{enumerate}[label*=\arabic*.]
+			\item \textbf{Generazione di una chiave privata casuale}
+			\item \textbf{Conversione della chiave privata generata in (1) in una chiave pubblica}: un protocollo comune per la conversione
+			in questa industria è l'algoritmo ECDSA
+			\item \textbf{Conversione della chiave pubblica generata in (2) in un indirizzo di valuta}: protocolli comuni per eseguire questa
+			conversione sono le funzioni hash SHA-256, Base58 encoding, Base32 encoding
+		\end{enumerate}
+	A questo punto qualsiasi valore inviato all'indirizzo generato in (3) è garantito dalla doppia spesa nella blockchain scelta ed accessibile
+	solo dal possessore della chiave privata generata in (1).
+	\item \textbf{\textsc{dove}}: due fattori critici che interessando l'industria delle valute virtuali sono la concorrenza bancaria ed il 
+	banning a livello statale. Anche se l'armonizzazione delle leggi europee in materia sarà di beneficio all'industria sia in termini di 
+	tassazione sia in termini di garanzia per l'utilizzatore finale, al momento questo ancora non avviene. Ogni Paese su scala mondiale 
+	ha la propria legislazione in materia ed i propri regimi di tassazione per tutte le operazioni di cambiavaluta virtuale,
+	il banning statale invece va da livelli	di permissività totale come nell'Unione Europea al banning totale con 
+	imprigionamento come in Bangladesh \cite{bitcoinLegality}. 
+	\item \textbf{\textsc{dove}}: i paesi asiatici della Corea del Sud, Cina e Giappone sono sempre stati leader nell'industria delle valute virtuali
+	negli ultimi 9 anni con un approccio proattivo in materia di tassazione. All'inizio del 2017 in Giappone il bitcoin è stato 
+	dichiarato legal tender tuttavia in Cina recentemente sono state dichiarate illegali tutte le operazioni di cambiavaluta virtuale ed ICO 
+	e gli exchange nel Paese asiatico stanno cessando le loro attività di cambio. 
+	\item \textbf{\textsc{dove}}: qualsiasi valutazione del mercato locale dovrebbe comprendere: numero di potenziali utenti, tipo di exchange da 
+	incorporare (FIAT $\Leftrightarrow$ CRYPTO oppure CRYPTO $\Leftrightarrow$ CRYPTO), tipi di protocolli da integrare (POW, DPOS, Masternode, altri...), 
+	tipi di servizi da offrire (trading, trading avanzato, processore di pagamento, altri...), se l'exchange incorporato è di tipologia
+	FIAT $\Leftrightarrow$ CRYPTO numero e tipologia di processori di pagamento accettati (PayPal, OKPAy, MoneyPolo, altri...), numero di exchange
+	simili nella regione di incorporazione. 
+	\item \textbf{\textsc{chi}}: ci sono numerose opzioni per offrire una polizza assicurativa sui fondi degli utilizzatori finali (Customer Protection):
+	creare comprensione tra gli utenti che il possesso delle chiavi private dei fondi mette loro in \textbf{posizione di responsabilità} 
+	nei confronti di un'eventuale perdita dei fondi, in quanto nessuno può recuperare le chiavi private una volta che sono perse. 
+	Creare comprensione negli utenti per non lasciare i fondi negli exchange ("\textit{Be Your own Bank!!}"), lasciandogli scegliere a quale
+	exchange del mercato affidarsi.
+	\item \textbf{\textsc{chi}}: mentre è decisamente costoso assicurare la valuta e le operazioni di trasmissione del valore, esempi di customer protection
+	in questa industria sono: la piattaforma Kraken ha recentemente permesso agli utenti Mt. Gox di richiedere rimborso tramite
+	la loro piattaforma, l'exchange BitFinex ha emesso token BFX per ripagare i propri utenti della perdita di 120.000 bitcoin (pari a circa \$72.000.000
+	all'epoca dell'hacking) dovuti al cambio del livello di sicurezza dell'exchange stesso, Ethereum ha eseguito uno fork al blocco 1920000
+	per ovviare ad un bug nel codice della Decentralized Autonomous Organization che ha permesso la sottrazione di \$50.000.000 di ETH dallo smart contract
+	di The DAO, altri casi di hacking...
+	\item \textbf{\textsc{Raccomandazioni finali/conformità legislativa}}: se intendete incorporare un exchange 
+	FIAT $\Leftrightarrow$ CRYPTO dovete focalizzarvi in prima istanza nella conformità legislativa in materia 
+	di AML/KYC nel Paese di incorporazione, le fondazioni
+	bitcoin locali possono aiutarvi in focalizzare le vostre operazioni di cambio basate sugli interessi degli utilizzatori finali 
+	nel Paese di incorporazione, promuovendo ambienti \textit{cryptocurrency friendly} nell'area di interesse.
+\end{enumerate}
